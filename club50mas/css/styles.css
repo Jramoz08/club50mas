@@ -1,0 +1,23 @@
+.mth-bannerOne h1{
+    color: #008F00;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 7rem 0 0 2.5rem;
+}
+
+.mth-bannerOne p{
+    margin: 2.5rem 0 0 2.5rem;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.mth-bannerOne button{
+    margin: 2.5rem 0 0 2.5rem;
+    background: #00B800;
+    border: 1.5px solid #008F00;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px 60px;
+}
