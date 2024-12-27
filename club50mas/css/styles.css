@@ -27,14 +27,20 @@
 }
 
 h3{
-    font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
+h1 span,
+h2 span,
 h3 span,
-p span{
+h4 span,
+h5 span{
     color: #00CC00;
+}
+
+p span{
+    color: #008F00;
 }
 
 .mth-content-two p{
@@ -56,11 +62,11 @@ p span{
 
 .mth-form input,
 .mth-form select{
-    width: 470px;
+    width: 450px;
     height: 48px;
     border-radius: 10px;
     border: 1.5px solid #D9D9D9;
-    padding: 0 10px;
+    padding: 0 14px;
     font-size: 14px;
     margin: 5px 0;
 }
@@ -68,10 +74,6 @@ p span{
 .mth-form input:focus{
     background-color: #C5ECBF;
     border: 1.5px solid #008C00;
-}
-
-.mth-content-tdatos{
-    padding: 0 10rem;
 }
 
 .mth-content-tdatos p{
@@ -88,8 +90,29 @@ p span{
 
 .mth-content-tdatos input{
     width: 24px;
-    border: 1.5px solid #D9D9D9;
+    height: 24px;
     border-radius: 20px;
+    -webkit-appearance: none;  
+    -moz-appearance: none;     
+    appearance: none;          
+    border: 2px solid #D9D9D9;    
+    border-radius: 5px;        
+    background-color: #ffffff; 
+    position: relative;
+}
+
+
+
+.mth-content-tdatos input:checked::before{
+    content: '';            
+    position: absolute;               
+    top: 2px;                          
+    left: 6px;                         
+    width: 8px;               
+    height: 12px;            
+    border: solid #00B800;               
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
 }
 
 .form-button{
@@ -111,17 +134,54 @@ p span{
     max-width: 100%;
     padding-bottom: 2rem;
     box-shadow: 2px 7px 23px -17px #000000;
+    border-radius: 20px;
+    margin-top: 2px;
 }
+
+.mth-card-two{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 340px;
+    max-width: 100%;
+    box-shadow: 2px 7px 23px -17px #000000;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.mth-card-two .card-body{
+    padding: 0 12px;
+}
+
+.mth-card-two h5{
+    font-size: 15px;
+}
+
+.mth-card-two p{
+    font-size: 12.5px;
+    line-height: 14px;
+}
+
+
 .mth-card p{
     font-size: 20px;
     line-height: 25px;
     margin: 0;
-    padding: 8px 40px;
+    padding: 8px 23px;
+    height: 6.9em;
 }
 
 .mth-card .mth-btn{
-    padding: 5px 23px;
+    padding: 0px;
     font-size: 14px;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .mth-card .mth-btn-disabled{
     padding: 5px 23px;
@@ -130,4 +190,55 @@ p span{
     border-color: #9D9D9D;
     cursor: not-allowed;
     pointer-events: none;
+}
+
+.mth-card-img{
+    background-color: #FFA025;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.mth-card-img{
+    height: 182px;
+    pointer-events: none;
+    align-content: flex-end;
+}
+
+.mth-etiqueta{
+    position: absolute;
+    width: 265px;
+    pointer-events: none;
+}
+
+.mth-card-logos{
+    height: 4rem;
+    pointer-events: none;
+}
+
+.content-footer img{
+    vertical-align: middle;
+    margin: 0 10px;
+    pointer-events: none;
+}
+.content-footer h5{
+    padding-top: 5px;
+}
+
+.content-footer p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content-footer{
+    border-top: 2px solid #00CC00;
+}
+
+.mth-vigilado{
+    position: absolute;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.mth-content-three {
+    background: #F5F5F5;
 }
