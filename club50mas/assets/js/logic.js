@@ -1,35 +1,24 @@
 // Validación de datos formulario
 
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
         const form = document.getElementById('registrationForm');
         if (form) {
             const submitButton = document.getElementById('Mthbottom');
 
             const validators = {
                 email: (element) => {
-                    return element.validity.valid;
+                    return element.validity.valid && element.value.includes('@');
                 },
                 name: (element) => {
-                    return element.value.trim() !== '';
-                },
-                password: (element) => {
-                    return element.value.length >= 6;
-                },
-                confirmPassword: (element) => {
-                    return element.value === document.getElementById('password').value;
+                    return element.value.trim() !== '' && !/\d/.test(element.value);
                 },
                 phone: (element) => {
                     const phoneRegex = /^[+]?\d+$/;
-                    return phoneRegex.test(element.value) && element.value.length >= 10;
+                    return phoneRegex.test(element.value) && element.value.length >= 10 && element.value.length <= 10;
                 },
-                gender: (element) => {
+                reason: (element) => {
                     return element.value !== '';
                 },
                 authorize: (element) => {
-                    return element.checked;
-                },
-                policy: (element) => {
                     return element.checked;
                 }
             };
@@ -64,13 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
             function getErrorMessage(element) {
                 switch (element.id) {
                     case 'email': return 'Por favor introduce un correo electrónico válido';
-                    case 'name': return 'El nombre es obligatorio';
-                    case 'password': return 'La contraseña debe tener al menos 6 caracteres';
-                    case 'confirmPassword': return 'Las contraseñas deben coincidir';
+                    case 'name': return 'El nombre es obligatorio, no puede contener números.';
                     case 'phone': return 'Por favor ingresa un número de teléfono válido';
-                    case 'gender': return 'Por favor selecciona tu género';
+                    case 'reason': return 'Por favor selecciona una opción';
                     case 'authorize': return 'Es un campo requerido';
-                    case 'policy': return 'Es un campo requerido';
                     default: return '';
                 }
             }
@@ -112,37 +98,62 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         }
-    }, 1000); // 
-});
- 
-const enlace = document.getElementById('mienlace');
 
-// Verificamos si el enlace ya fue clickeado al cargar la página
-if (!sessionStorage.getItem('clicEnlace')) {
-  // Si no ha sido clickeado, ejecutamos el bloque de código automáticamente
-  if (window.location.pathname === "/" && !hasExecuted) {
-    Flickerlessly.onReady({
-      selector: "#mth-pop-up",
-      success: function (el, log) {
-        log("Detected element", el);
-        window.mthSpaces();
-      },
+// Evento para ir a el formulario
+
+const mthBtnBanner = document.getElementById('mthBtnBanner');
+const formContent = document.getElementById('formContent');
+
+function scrollToForm(){
+
+    formContent.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
     });
 
-    hasExecuted = true; // Marcar que ya se ejecutó
-  }
+};
 
-  // Luego marcamos que ya fue clickeado en sessionStorage
-  sessionStorage.setItem('clicEnlace', 'true');
-}
+// Evento para las tarjetas
 
-// Añadimos un evento de clic al enlace
-enlace.addEventListener('click', function(event) {
-  // Prevenimos que se realice la acción predeterminada del enlace
-  event.preventDefault();
-});
+const mthFrameOne = document.getElementById('frameOne');
+const mthFrameTwo = document.getElementById('frameTwo');
+const openAhorroEvent = document.getElementById('openAhorroEvent');
+const openFinanceEvent = document.getElementById('openFinanceEvent');
+const btnFinance = document.getElementById('btnFinance');
+const btnAhorro = document.getElementById('btnAhorro');
 
-// Definimos la variable hasExecuted
-let hasExecuted = false; 
+function openAhorro(){
 
+    openFinanceEvent.classList.add("d-none");
+    openAhorroEvent.classList.remove("d-none");
+    openAhorroEvent.classList.add("d-block");
+    
+};
 
+function openFinance(){
+
+    openAhorroEvent.classList.add("d-none");
+    openFinanceEvent.classList.remove("d-none");
+    openFinanceEvent.classList.add("d-block");
+    
+};
+
+function cardEventOne(){
+
+    mthFrameTwo.classList.remove("mth-d-active");
+    mthFrameOne.classList.add("mth-d-active");
+    mthFrameOne.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+};
+
+function cardEventTwo(){
+
+    mthFrameOne.classList.remove("mth-d-active");
+    mthFrameTwo.classList.add("mth-d-active");
+    mthFrameTwo.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+};

@@ -1,226 +1,347 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Club50mas</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="mth-bannerOne mb-5">
-        <div class="d-flex justify-content-center">
-            <div class="col-4 ps-5">
-                <h1 class="ms-5">¡Bienvenido a tu comunidad!</h1>
-                <p class="mt-3 ms-5">Disfruta de momentos inolvidables con amigos y familia mientras mejoras tu calidad de vida. 
-                   <br><strong>¡Únete y vive la experiencia!</strong></p>
-                   <button class="mth-btn mt-4 ms-5">
-                    Únete
-                   </button>
-            </div>
-            <div class="col-8 text-center">
-                <img src="assets/Bannerone.png" alt="banner" class="w-75">
-            </div>
-        </div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Club50mas</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="mth-bannerOne mb-5">
+    <div class="d-flex justify-content-center">
+      <div class="col-4 ps-5">
+        <h1 class="ms-5">¡Bienvenido a tu comunidad!</h1>
+        <p class="mt-3 ms-5">Disfruta de momentos inolvidables con amigos y familia mientras mejoras tu calidad de vida.
+          <br><strong>¡Únete y vive la experiencia!</strong>
+        </p>
+        <button id="mthBtnBanner" onclick="scrollToForm()" class="mth-btn mt-4 ms-5">
+          Únete
+        </button>
+      </div>
+      <div class="col-8 text-center">
+        <img src="assets/Bannerone.png" alt="banner" class="w-75">
+      </div>
     </div>
-    <div class="mth-content-two pb-5">
-        <div class="mth-text text-center pt-5 mt-3">
-          <h2 class="mb-5">Únete a nuestra comunidad<br>y <span>aprovecha tu tiempo libre.</span></h2>
-          <p class="mb-5">Te ofrecemos bienestar y entretenimiento, con productos, servicios y beneficios pensados para ti.
-            Aquí encontrarás todo lo que necesitas para cuidar tu salud, seguir aprendiendo, disfrutar
-            con tus seres queridos y acceder a opciones financieras que te brindan tranquilidad.
-            ¡Queremos acompañarte en cada paso y que <strong>aproveches al máximo</strong> cada momento!</p>
-        </div>
-        <div class="mth-card-form">
-          <div class="text-center mt-3">
-            <img src="./assets/Offer.png" alt="ofter">
+  </div>
+  <div class="mth-content-two pb-5">
+    <div class="mth-text text-center pt-5 mt-3">
+      <h2 class="mb-5">Únete a nuestra comunidad<br>y <span>aprovecha tu tiempo libre.</span></h2>
+      <p class="mb-5">Te ofrecemos bienestar y entretenimiento, con productos, servicios y beneficios pensados para ti.
+        Aquí encontrarás todo lo que necesitas para cuidar tu salud, seguir aprendiendo, disfrutar
+        con tus seres queridos y acceder a opciones financieras que te brindan tranquilidad.
+        ¡Queremos acompañarte en cada paso y que <strong>aproveches al máximo</strong> cada momento!</p>
+    </div>
+    <div id="formContent" class="mth-card-form">
+      <div class="text-center mt-3">
+        <img src="./assets/Offer.png" alt="ofter">
+      </div>
+      <div class="text-center">
+        <h2>¿Qué esperas para disfrutar de momentos<br>
+          y experiencias creadas para ti?<br>
+          <span>Únete sin costo.</span>
+        </h2>
+      </div>
+      <div class="content-form">
+        <form class="mt-5 " action="" id="registrationForm">
+          <div class="mth-form d-flex justify-content-center align-items-center">
+            <div class="col-6 d-grid justify-content-center">
+              <label><b>Nombre completo</b></label>
+              <input id="name" type="text" placeholder="Nombre completo" required>
+              <div id="nameError" class="error-message"></div>
+              <label class="mt-3"><b>Celular</b></label>
+              <input id="phone" type="tel" placeholder="321-456-7890" required>
+              <div id="phoneError" class="error-message"></div>
+            </div>
+            <div class="col-6 d-grid justify-content-center">
+              <label><b>Correo</b></label>
+              <input id="email" type="text" placeholder="correo@dominio.com" required>
+              <div id="emailError" class="error-message"></div>
+              <label class="mt-3"><b>¿Qué te motiva a ser parte de nuestra comunidad?</b></label>
+              <select id="reason" required>
+                <option value="">Seleccione</option>
+                <option value="1">1. Conocer soluciones financieras.</option>
+                <option value="2">2. Aprender de nuevos conocimientos.</option>
+                <option value="3">3. Disfrutar momentos con seres queridos.</option>
+                <option value="4">4. Soluciones para cuidar mi salud.</option>
+              </select>
+              <div id="reasonError" class="error-message"></div>
+            </div>
           </div>
+          <div class="mth-content-tdatos col-12 d-flex mt-3 justify-content-center">
+            <div class="d-flex justify-content-center align-items-center">
+              <input id="authorize" type="checkbox" required>
+            </div>
+            <p class="me-0 ms-0">Al registrarme confirmo que he leído y autorizo el tratamiento de mis datos personales
+              de acuerdo con la <a href="" target="_blank">Política de Datos Personales</a>.<br>
+              Así mismo, autorizo y solicito que me contacten a los canales autorizados para fines publicitarios,
+              comerciales o de cobranza. Canales de contacto.</p>
+          </div>
+          <div id="authorizeError" class="error-message w-50 text-center"></div>
           <div class="text-center">
-            <h2>¿Qué esperas para disfrutar de momentos<br>
-              y experiencias creadas para ti?<br>
-              <span>Únete sin costo.</span></h2>
+            <button class="mth-btn-off form-button mt-3 mb-3" id="Mthbottom">
+              Registrate
+            </button>
           </div>
-          <div class="content-form">
-            <form class="mt-5 " action="">
-              <div class="mth-form d-flex">
-                <div class="col-6 d-grid">
-                  <label><b>Nombre completo</b></label>
-                  <input type="text" placeholder="Nombre completo" required>
-                  <label class="mt-3"><b>Celular</b></label>
-                  <input type="tel" placeholder="321-456-7890" required>
-                  </div>
-                  <div class="col-6 d-grid">
-                    <label><b>Correo</b></label>
-                  <input type="text" placeholder="correo@dominio.com" required>
-                  <label class="mt-3"><b>¿Qué te motiva a ser parte de nuestra comunidad?</b></label>
-                  <select id="" required >
-                    <option value="">Seleccione</option>
-                    <option value="male">Masculino</option>
-                    <option value="female">Femenino</option>
-                    <option value="other">Otro</option>
-                  </select>
-                  </div>
-              </div>
-              <div class="mth-content-tdatos col-12 d-flex mt-3 justify-content-center">
-                <div class="d-flex justify-content-center align-items-center">
-                  <input type="checkbox" required>
-                </div>
-                <p class="me-0 ms-0">Al registrarme confirmo que he leído y autorizo el tratamiento de mis datos personales de acuerdo con la <a href="" target="_blank">Política de Datos Personales</a>.<br>
-                  Así mismo, autorizo y solicito que me contacten a los canales autorizados para fines publicitarios, comerciales o de cobranza. Canales de contacto.</p>
-                  
-              </div>
-              <div class="text-center">
-                <button class="mth-btn form-button mt-3 mb-3">
-                  Registrate
-                 </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="mth-text text-center mt-3 mb-5">
-          <h1>¡Descubre los <br><span>beneficios</span> de tu comunidad!</h1>
-        </div>
-        <div class="content-cards d-flex">
-          <div class="mth-card mb-5">
-            <div class="mth-card-img text-center">
-              <img src="./assets/card1.png" alt="">
-            </div>
-            <div class="text-center mb-2 pb-5">
-              <p>Aprende sobre<br>productos de<br><span><strong>ahorro y financiamiento</strong></span></p>
-            </div>
-            <a href="" target="_blank" class="mth-btn">
-              Saber más
-            </a>
-          </div>
-          <div class="mth-card mb-5">
-            <div class="mth-card-img text-center">
-              <img src="./assets/card2.png" alt="">
-            </div>
-            <div class="text-center mb-2">
-              <p>Accede <span><strong>soluciones<br>que fomentan</strong></span> el cuidado de la salud física y mental.</p>
-            </div>
-            <div class="w-100 text-center mth-card-logos">
-              <img src="./assets/Gaes.png" alt="gaes y versania" class="mb-3">
-            </div>
-            <a href="" target="_blank" class="mth-btn">
-              Saber más
-            </a>
-          </div>
-          <div class="mb-5">
-            <div class="mth-etiqueta d-flex justify-content-end">
-              <img class="" src="./assets/proximamente.png" alt="etiqueta">
-            </div>
-            <div class="mth-card justify-content-center">
-              <div class="mth-card-img text-center"> 
-                <img src="./assets/card3.png" alt="card3">
-              </div>
-              <div class="text-center mb-2">
-                <p><span><strong>Sigue aprendiendo</strong></span><br>y <strong>generando ingresos</strong> con programas de educación y crecimiento</p>
-              </div>
-              <div class="w-100 text-center mth-card-logos">
-                <img src="./assets/Eafit.png" alt="Eafit" class="mb-3">
-              </div>
-              <a href="" target="_blank" class="mth-btn mth-btn-disabled">
-                Pronto
-              </a>
-            </div>
-          </div>
-          <div class="mb-5">
-            <div class="mth-etiqueta d-flex justify-content-end">
-              <img class="" src="./assets/proximamente.png" alt="etiqueta">
-            </div>
-            <div class="mth-card">
-              <div class="mth-card-img text-center"> 
-                <img src="./assets/card4.png" alt="card4">
-              </div>
-              <div class="text-center mb-2">
-                <p>Encuentra opciones para disfrutar y <span><strong>aprovechar el tiempo libre</strong></span> con familia y/o amigos</p>
-              </div>
-              <div class="w-100 text-center mth-card-logos">
-                <img src="./assets/traveldepot.png" alt="traveldepot" class="mb-3">
-              </div>
-              <a href="" target="_blank" class="mth-btn mth-btn-disabled">
-                Pronto
-              </a>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="mth-content-three pb-5 pt-2">
-      <div class="text-center pt-5 pb-5">
-        <h1><span>Consejos</span> Educación financiera</h1>
-      </div>
-      <div class="content-cards d-flex justify-content-center align-items-center pb-5">
-        <div class="col-4 d-flex justify-content-center">
-          <div class="mth-card-two mb-3">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title"><strong>¿Para qué el</strong><br><span>AHORRO</span> <strong>PARA</strong><br><strong>EL</strong> <span>RETIRO</span>?</h5>
-                  <p class="card-text">Los propósitos del
-                    ahorro para el retiro
-                    son garantizar ingresos
-                    en la jubilación, independencia financiera, seguridad y bienestar emocional.</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img src="./assets/Second-card1.png" class="img-fluid rounded-end" alt="...">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 d-flex justify-content-center">
-          <div class="mth-card-two mb-3">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title mb-2"><span>Hábito de pago</span></h5>
-                  <p class="card-text">Es la frecuencia
-                    con la que pagas
-                    tus obligaciones financieras a tiempo.<br>
-                    <strong>“El que paga lo que
-                      debe sabe lo que tiene”.</strong></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img src="./assets/Second-card2.png" class="img-fluid rounded-end" alt="...">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-4 d-flex justify-content-center">
-          <div class="mth-card-two mb-3">
-            <div class="row g-0 align-items-center">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title mb-2"><strong>Ten cuidado con<br>los</strong> <span>gastos Hormiga</span></h5>
-                  <p class="card-text">¿Cuánto gasta en el<br>café, lotería, cigarrillos<br>o postres de todos los días?</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img src="./assets/Second-card3.png" class="img-fluid rounded-end" alt="...">
-              </div>
-            </div>
-          </div>
-        </div>
-       
+        </form>
       </div>
     </div>
-    
-    <footer>
-      <div class="content-footer text-center">
-        <div class="mth-vigilado">
-          <img src="./assets/VIGILADO.png" alt="vigilado">
+    <div class="mth-text text-center mt-3 mb-5">
+      <h1>¡Descubre los <br><span>beneficios</span> de tu comunidad!</h1>
+    </div>
+    <div class="content-cards d-flex">
+      <div class="mth-card mb-5">
+        <div class="mth-card-img text-center">
+          <img src="./assets/card1.png" alt="">
         </div>
-        <div class="justify-content-center align-items-center d-flex mt-4">
-          <h5>Desarrollado por </h5>
+        <div class="text-center mb-2 pb-5">
+          <p>Aprende sobre<br>productos de<br><span><strong>ahorro y financiamiento</strong></span></p>
+        </div>
+        <a onclick="cardEventOne()" class="mth-btn">
+          Saber más
+        </a>
+      </div>
+      <div class="mth-card mb-5">
+        <div class="mth-card-img text-center">
+          <img src="./assets/card2.png" alt="">
+        </div>
+        <div class="text-center mb-2">
+          <p>Accede <span><strong>soluciones<br>que fomentan</strong></span> el cuidado de la salud física y mental.</p>
+        </div>
+        <div class="w-100 text-center mth-card-logos">
+          <img src="./assets/Gaes.png" alt="gaes y versania" class="mb-3">
+        </div>
+        <a onclick="cardEventTwo()" class="mth-btn">
+          Saber más
+        </a>
+      </div>
+      <div class="mb-5">
+        <div class="mth-etiqueta d-flex justify-content-end">
+          <img class="" src="./assets/proximamente.png" alt="etiqueta">
+        </div>
+        <div class="mth-card justify-content-center">
+          <div class="mth-card-img text-center">
+            <img src="./assets/card3.png" alt="card3">
+          </div>
+          <div class="text-center mb-2">
+            <p><span><strong>Sigue aprendiendo</strong></span><br>y <strong>generando ingresos</strong> con programas de
+              educación y crecimiento</p>
+          </div>
+          <div class="w-100 text-center mth-card-logos">
+            <img src="./assets/Eafit.png" alt="Eafit" class="mb-3">
+          </div>
+          <a href="" target="_blank" class="mth-btn mth-btn-disabled">
+            Pronto
+          </a>
+        </div>
+      </div>
+      <div class="mb-5">
+        <div class="mth-etiqueta d-flex justify-content-end">
+          <img class="" src="./assets/proximamente.png" alt="etiqueta">
+        </div>
+        <div class="mth-card">
+          <div class="mth-card-img text-center">
+            <img src="./assets/card4.png" alt="card4">
+          </div>
+          <div class="text-center mb-2">
+            <p>Encuentra opciones para disfrutar y <span><strong>aprovechar el tiempo libre</strong></span> con familia
+              y/o amigos</p>
+          </div>
+          <div class="w-100 text-center mth-card-logos">
+            <img src="./assets/traveldepot.png" alt="traveldepot" class="mb-3">
+          </div>
+          <a href="" target="_blank" class="mth-btn mth-btn-disabled">
+            Pronto
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="frameOne" class="cards-event-one mth-d-none">
+      <div class="content-left  col-6">
+        <div class="d-grid justify-content-center mt-5 pt-5">
+          <h2>La oferta 50+ del Banco Popular ¡Una solución
+            <span>financiera pensada
+              especialmente para ti!</span>
+          </h2>
+          <p>Descubre productos de ahorro, inversión y crédito, diseñados para brindarte seguridad y bienestar.<br><br>
+            Únete a más de 540.000 personas que ya se benefician de nuestra confianza y apoyo.</p>
+        </div>
+        <div>
+          <img src="assets/tarjetasbp.png" alt="tarjetas banco popular">
+        </div>
+      </div>
+      <div class="content-right col-6 p-4">
+        <div class="card p-4">
+          <h1>Conoce la oferta<br>financiera</h1>
+          <div class="bottons">
+            <a onclick="openAhorro()" id="btnAhorro" class="btn-diseable me-3">Ahorro</a>
+            <a onclick="openFinance()" id="btnFinance" class="btn-active">Financiamiento</a>
+          </div>
+          <div id="openFinanceEvent" class="openFinanceDiv ">
+            <h3 class="mt-3">Aprende sobre los beneficios</h3>
+            <div class="d-flex justify-content-start align-items-center content-logo mt-4">
+              <img src="./assets/MoneyTCreditoP.png" alt="Tarjeta de Crédito Posible">
+              <h5>Tarjeta de Crédito Posible</h5>
+            </div>
+            <div class="d-flex justify-content-start align-items-center content-logo mt-4">
+              <img src="./assets/MoneyTCredito.png" alt="Tarjeta de Crédito Posible">
+              <h5>Tarjeta de Crédito</h5>
+            </div>
+            <div class="d-flex justify-content-start align-items-center content-logo content-logogray mt-4 mb-4">
+              <img src="./assets/MoneyLibranza.png" alt="Tarjeta de Crédito Posible">
+              <h5><span>Crédito Libranza</span></h5>
+            </div>
+
+            <div class="content-text mb-3">
+              <p>
+                Este crédito tiene algunas características que lo diferencian de otros tipos
+              de préstamos. Conócelas para saber si se adaptan a ti:
+              </p>
+              <ul>
+                <li>Es de libre inversión: tú decides para qué usar el dinero.</li>
+                <li>No necesitas justificar el destino: compras, gastos corrientes, pago de deudas, gastos de emergencia. Lo puedes usar según tu necesidad.</li>
+              </ul>
+              <a href="">Leer mas</a>
+            </div>
+            <div class="text-center">
+              <img src="assets/video.png" alt="">
+            </div>
+          </div>
+          <div id="openAhorroEvent" class="openAhorroDiv mth-d-none">
+            <h3 class="mt-3">Aprende sobre los beneficios</h3>
+            <div class="d-flex justify-content-start align-items-center content-logo mt-4">
+              <img src="./assets/MoneyTCreditoP.png" alt="Tarjeta de Crédito Posible">
+              <h5>Tarjeta de Crédito Posible</h5>
+            </div>
+            <div class="d-flex justify-content-start align-items-center content-logo mt-4">
+              <img src="./assets/MoneyTCredito.png" alt="Tarjeta de Crédito Posible">
+              <h5>Tarjeta de Crédito</h5>
+            </div>
+            <div class="d-flex justify-content-start align-items-center content-logo content-logogray mt-4 mb-4">
+              <img src="./assets/MoneyLibranza.png" alt="Tarjeta de Crédito Posible">
+              <h5><span>Crédito Libranza</span></h5>
+            </div>
+
+            <div class="content-text mb-3">
+              <p>
+                Este crédito tiene algunas características que lo diferencian de otros tipos
+              de préstamos. Conócelas para saber si se adaptan a ti:
+              </p>
+              <ul>
+                <li>Es de libre inversión: tú decides para qué usar el dinero.</li>
+                <li>No necesitas justificar el destino: compras, gastos corrientes, pago de deudas, gastos de emergencia. Lo puedes usar según tu necesidad.</li>
+              </ul>
+              <a href="">Leer mas</a>
+            </div>
+            <div class="text-center">
+              <img src="assets/video.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="frameTwo" class="cards-event-one mth-d-none">
+      <div class="content-left  col-6">
+        <div class="d-grid justify-content-center mt-5 pt-5">
+          <h2>La oferta 50+ del Banco Popular ¡Una solución
+            <span>financiera pensada
+              especialmente para ti!</span>
+          </h2>
+
+        </div>
+        <div>
+          <img src="assets/tarjetasbp.png" alt="tarjetas banco popular">
+        </div>
+      </div>
+      <div class="content-right col-6">
+        <div class="card">
+          <h1>Conoce la oferta<br>financiera</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mth-content-three pb-5 pt-2">
+    <div class="text-center pt-5 pb-5">
+      <h1><span>Consejos</span> Educación financiera</h1>
+    </div>
+    <div class="content-cards d-flex justify-content-center align-items-center pb-5">
+      <div class="col-4 d-flex justify-content-center">
+        <div class="mth-card-two mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>¿Para qué el</strong><br><span>AHORRO</span>
+                  <strong>PARA</strong><br><strong>EL</strong> <span>RETIRO</span>?</h5>
+                <p class="card-text">Los propósitos del
+                  ahorro para el retiro
+                  son garantizar ingresos
+                  en la jubilación, independencia financiera, seguridad y bienestar emocional.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="./assets/Second-card1.png" class="img-fluid rounded-end" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <div class="mth-card-two mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title mb-2"><span>Hábito de pago</span></h5>
+                <p class="card-text">Es la frecuencia
+                  con la que pagas
+                  tus obligaciones financieras a tiempo.<br>
+                  <strong>“El que paga lo que
+                    debe sabe lo que tiene”.</strong>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="./assets/Second-card2.png" class="img-fluid rounded-end" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 d-flex justify-content-center">
+        <div class="mth-card-two mb-3">
+          <div class="row g-0 align-items-center">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title mb-2"><strong>Ten cuidado con<br>los</strong> <span>gastos Hormiga</span></h5>
+                <p class="card-text">¿Cuánto gasta en el<br>café, lotería, cigarrillos<br>o postres de todos los días?
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="./assets/Second-card3.png" class="img-fluid rounded-end" alt="...">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="content-footer text-center">
+      <div class="mth-vigilado">
+        <img src="./assets/VIGILADO.png" alt="vigilado">
+      </div>
+      <div class="justify-content-center align-items-center d-flex mt-4">
+        <h5>Desarrollado por </h5>
         <img src="./assets/adl.svg" alt="ADL Digital Labs">
         |
         <img src="./assets/Logo.png" alt="ADL Digital Labs">
-        </div>
-        <p class="mt-2 mb-4">Pronto tendremos más productos y servicios para ti</p>
       </div>
-    </footer>
-    <script src="assets/js/validation.js"></script>
+      <p class="mt-2 mb-4">Pronto tendremos más productos y servicios para ti</p>
+    </div>
+  </footer>
+  <script src="assets/js/logic.js"></script>
 </body>
+
 </html>
