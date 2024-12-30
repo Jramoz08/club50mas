@@ -279,7 +279,7 @@ p span{
 
 .cards-event-one .content-left h2{
     line-height: 32px;
-    width: 350px;
+    width: 365px;
 }
 .cards-event-one .content-left p{
     line-height: 24px;
@@ -288,7 +288,7 @@ p span{
     width: 350px;
 }
 
-.cards-event-one .content-left div img{
+.cards-event-one .content-left div .img-tarjeta{
     width: 157px;
 }
 
@@ -330,11 +330,17 @@ p span{
 }
 
 .openFinanceDiv h6,
+.openHospitalDiv h6,
+.openExequialDiv h6,
+.openseguroDiv h6,
 .openAhorroDiv h6{
     padding: 5px 5px 0 5px;
 }
 
 .openFinanceDiv .content-logo,
+.openExequialDiv .content-logo,
+.openHospitalDiv .content-logo,
+.openseguroDiv .content-logo,
 .openAhorroDiv .content-logo{
     border-radius: 5px;
     border: 1.5px solid #D9D9D9;
@@ -345,18 +351,27 @@ p span{
 }
 
 .openAhorroDiv a,
+.openExequialDiv a,
+.openHospitalDiv a,
+.openseguroDiv a,
 .openFinanceDiv a{
     color: #000;
     text-decoration: none;
 }
 
 .openFinanceDiv .content-logo img,
+.openseguroDiv .content-logo img,
+.openHospitalDiv .content-logo img,
+.openExequialDiv .content-logo img,
 .openAhorroDiv .content-logo img{
     vertical-align: middle;
     width: 24px;
 }
 
 .openFinanceDiv .content-logo:hover,
+.openHospitalDiv .content-logo:hover,
+.openExequialDiv .content-logo:hover,
+.openseguroDiv .content-logo:hover,
 .openAhorroDiv .content-logo:hover {
     background: #F5F5F5 !important;
     color: #008F00;
@@ -385,3 +400,7 @@ p span{
     width: 513px;
 }
 
+.comunidad-img img{
+    width: 107px;
+    vertical-align: middle;
+}
