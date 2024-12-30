@@ -38,7 +38,8 @@ h1 span,
 h2 span,
 h3 span,
 h4 span,
-h5 span{
+h5 span,
+h6 span{
     color: #00CC00;
 }
 
@@ -267,7 +268,9 @@ p span{
 .cards-event-one .content-left{
     background: #FFA025;
     color: #fff;
-    
+    display: grid;
+    justify-content: normal;
+    align-items: self-end;
 }
 
 .cards-event-one h2 span{
@@ -311,6 +314,8 @@ p span{
     padding: 5px 10px;
     color: #000;
     text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .btn-active{
@@ -320,32 +325,40 @@ p span{
     padding: 5px 10px;
     color: #008F00;
     text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
 }
 
-.openFinanceDiv h5{
-    padding: 5px 0 0 10px;
+.openFinanceDiv h6,
+.openAhorroDiv h6{
+    padding: 5px 5px 0 5px;
 }
 
-.openFinanceDiv .content-logo{
+.openFinanceDiv .content-logo,
+.openAhorroDiv .content-logo{
     border-radius: 5px;
     border: 1.5px solid #D9D9D9;
     background-color: #fff;
-    max-width: 55%;
-    height: 3rem;
+    height: 2.5rem;
+    padding: 0 10px;
+
 }
 
-.openFinanceDiv .content-logo img{
+.openAhorroDiv a,
+.openFinanceDiv a{
+    color: #000;
+    text-decoration: none;
+}
+
+.openFinanceDiv .content-logo img,
+.openAhorroDiv .content-logo img{
     vertical-align: middle;
     width: 24px;
-    margin-left: 10px;
 }
 
-.content-logogray {
+.openFinanceDiv .content-logo:hover,
+.openAhorroDiv .content-logo:hover {
     background: #F5F5F5 !important;
-    width: 35%;
-}
-
-.content-logogray h5 span {
     color: #008F00;
 }
 
@@ -359,9 +372,16 @@ p span{
     font-weight: bold;
 }
 
-
-
 .content-right .card{
     border-radius: 20px;
+    padding: 30px;
+}
+
+.content-right .card h1{
+    line-height: 100%;
+}
+
+.content-video img{
+    width: 513px;
 }
 
