@@ -73,7 +73,7 @@ h3 span{
 
 .mth-banner {
     height: 450px;
-    background-image: url('../assets/bannerDPLibranza.jfif');
+    background-image: url('../bannerDPLibranza.jfif');
     background-size:cover;
     background-position: 0% 35%;   
 }
@@ -168,9 +168,56 @@ h3 span{
 }
 
 .mth-img-organizer {
-    width: 6% !important;
+    width: 8% !important;
 }
 
+img.mth-img-player-mijo {
+    width: 80%;
+}
+
+.card {
+    height: 315px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px #00000023;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00CC00;
+}
+.carousel-indicators {
+    position: static;
+    margin-top: 1rem;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #00CC00;
+}
+
+.card-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    line-height: 13px;
+    text-align: left;
+}
+
+.mth-btn-carousel {
+    border-radius: 32px;
+    background-color: #C5ECBF;
+    color: #008C00;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    border: none;
+    width: 224px;
+}
+
+
+/* ---------------------------- ESTILOS FOOTER --------------------------------*/
 .content-footer img{
     vertical-align: middle;
     margin: 0 10px;
