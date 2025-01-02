@@ -11,15 +11,20 @@
     line-height: 28px;
 }
 
-.mth-btn,
-button.valid{
-    background: #00B800;
+.mth-btn{
+    background-color: #00B800;
     border: 1.5px solid #008F00;
     border-radius: 10px;
     font-size: 20px;
     color: #fff;
     padding: 8px 60px;
     text-decoration: none;
+    cursor: pointer !important;
+}
+
+button.valid{
+    background-color: #00B800;
+    border: 1.5px solid #008F00;    
     cursor: pointer !important;
 }
 
@@ -199,12 +204,12 @@ p span{
 .mth-btn-off{
     background-color: #9D9D9D;
     border: 1.5px solid #9D9D9D;
+    cursor: not-allowed !important;
     border-radius: 10px;
     font-size: 20px;
     color: #fff;
     padding: 8px 60px;
     text-decoration: none;
-    cursor: not-allowed !important;
 }
 
 .mth-card-img{
@@ -403,4 +408,162 @@ p span{
 .comunidad-img img{
     width: 107px;
     vertical-align: middle;
+}
+
+
+/* -------------------- estilos detalle producto crédito libranza --------------------------*/
+
+.mth-banner {
+    height: 450px;
+    background-image: url('../bannerDPLibranza.jfif');
+    background-size:cover;
+    background-position: 0% 35%;   
+}
+
+.mth-content-one-detalle-producto,
+.mth-content-two-detalle-producto,
+.mth-content-three-detalle-producto {
+    background-color: #F5F5F5;
+}
+
+.mth-form-int {
+    width: 40% !important;
+    background-color: #FEFEFE;
+    box-shadow: 9px 12px 58.1px 0px #232e2440;
+    border-radius: 13px;
+}
+
+.mth-form-int input,
+.mth-form-int select{
+    height: 45px;
+    border-radius: 6px;
+    border: 0.75px solid #D9D9D9;
+    /* padding: 0 8px; */
+    font-size: 14px;
+}
+
+.mth-img-bank {
+    width: 22% !important;
+}
+
+.mth-txt-h5 {
+    font-weight: 700;
+}
+
+.mth-txt-color-h4,
+.mth-txt-color-h5 {
+    color: #00B800;
+}
+
+.mth-lbl-nombre, 
+.mth-lbl-correo,
+.mth-lbl-celular,
+.mth-lbl-atencion {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+#inputNombre:focus,
+#inputCorreo:focus,
+#inputCelular:focus {
+    background-color: #C5ECBF;
+    border: 0.75px solid #008C00;
+}
+
+.mth-btn-registro {
+    
+    background-color: #9D9D9D;
+    border: 1.5px solid #9D9D9D;
+    cursor: not-allowed !important;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px 41%;
+    border: none;
+    font-weight: 600;
+}
+
+.mth-btn-regresar {
+    border-radius: 8px;
+    border: 0.5px solid #D8D8D8;
+    color: #000;
+    background-color: #FFFFFF;
+    padding: 6px 2%;
+}
+
+.mth-chevron-left {
+    color: #00CC00;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.mth-button-dropdown {
+    width: 90%;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #D9D9D9;
+    color: #000;
+    padding: 2%;
+}
+
+.mth-text-h4-color {
+    color: #008F00;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.mth-img-organizer {
+    width: 8% !important;
+}
+
+img.mth-img-player-mijo {
+    width: 80%;
+}
+
+.card {
+    height: 315px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px #00000023;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00CC00;
+}
+.carousel-indicators {
+    position: static;
+    margin-top: 1rem;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+    background-color: #00CC00;
+}
+
+.card-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    line-height: 13px;
+    text-align: left;
+}
+
+.mth-btn-carousel {
+    border-radius: 32px;
+    background-color: #C5ECBF;
+    color: #008C00;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    border: none;
+    width: 224px;
+}
+
+
+.content-thankyoupage div{
+    width: 700px;
 }
