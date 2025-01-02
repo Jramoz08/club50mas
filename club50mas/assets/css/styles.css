@@ -87,7 +87,7 @@ h3 span{
 .mth-form {
     width: 40% !important;
     background-color: #FEFEFE;
-    box-shadow: 12.07px 0px 18.1px 0px #232E241F;
+    box-shadow: 9px 12px 58.1px 0px #232e2440;
     border-radius: 13px;
 }
 
@@ -122,9 +122,11 @@ h3 span{
     line-height: 12px;
 }
 
-#inputNombre:focus {
-    background-color: #F5F5F5;
-    border: 0.75px solid #555555;
+#inputNombre:focus,
+#inputCorreo:focus,
+#inputCelular:focus {
+    background-color: #C5ECBF;
+    border: 0.75px solid #008C00;
 }
 
 .mth-btn-registro {
