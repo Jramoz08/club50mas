@@ -94,3 +94,8 @@ function openExequial() {
     toggleCardVisibility(openExequialEvent, openSeguroEvent, btnExequial, btnSeguro);
     toggleCardVisibility(openExequialEvent, openHospitalEvent, btnExequial, btnHospital);
 }
+
+
+function Home() {
+    window.location.href = '../club50mas/index.html'
+}

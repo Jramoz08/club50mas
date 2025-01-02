@@ -92,7 +92,7 @@ if (form) {
         });
 
         if (allValid) {
-            alert('Formulario enviado correctamente');
+            window.location.href = '../club50mas/thankyoupageComunidad.html'; 
         } else {
             alert('Por favor, corrige los errores');
         }

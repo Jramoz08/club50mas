@@ -25,7 +25,7 @@ button.valid{
 
 
 .mth-content-two{
-    background-image: url('/assets/Background-home.png');
+    background-image: url('../Background-home.png');
     background-size: contain;
 }
 
