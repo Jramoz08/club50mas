@@ -56,7 +56,6 @@ function cardEventTwo() {
 }
 
 
-// Activar o desactivar botones 
 function toggleCardVisibility(openElement, hideElement, openBtn, hideBtn) {
     hideElement.classList.add("d-none");
     hideBtn.classList.remove("btn-active");
@@ -68,7 +67,6 @@ function toggleCardVisibility(openElement, hideElement, openBtn, hideBtn) {
     openBtn.classList.remove("btn-diseable");
 }
 
-// Obtener los botones y divs correspondientes para las nuevas secciones
 const openHospitalEvent = document.getElementById('openHospitalEvent');
 const openSeguroEvent = document.getElementById('openSeguroEvent');
 const openExequialEvent = document.getElementById('openExequialEvent');
@@ -77,19 +75,17 @@ const btnHospital = document.getElementById('btnHospital');
 const btnSeguro = document.getElementById('btnSeguro');
 const btnExequial = document.getElementById('btnExequial');
 
-// Función para abrir Hospital
 function openHospital() {
     toggleCardVisibility(openHospitalEvent, openSeguroEvent, btnHospital, btnSeguro);
     toggleCardVisibility(openHospitalEvent, openExequialEvent, btnHospital, btnExequial);
 }
 
-// Función para abrir Seguro
 function openSeguro() {
     toggleCardVisibility(openSeguroEvent, openHospitalEvent, btnSeguro, btnHospital);
     toggleCardVisibility(openSeguroEvent, openExequialEvent, btnSeguro, btnExequial);
 }
 
-// Función para abrir Exequial
+
 function openExequial() {
     toggleCardVisibility(openExequialEvent, openSeguroEvent, btnExequial, btnSeguro);
     toggleCardVisibility(openExequialEvent, openHospitalEvent, btnExequial, btnHospital);
@@ -98,4 +94,11 @@ function openExequial() {
 
 function Home() {
     window.location.href = '../club50mas/index.html'
+}
+
+
+//funcion para retornar a una pagina anterior
+
+function returnPage() {
+    window.history.back();
 }
