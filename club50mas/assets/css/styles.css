@@ -2,41 +2,57 @@
     color: #008F00;
     font-size: 48px;
     font-weight: 700;
-    margin: 7rem 0 0 2.5rem;
+    margin-top: 7rem;
 }
 
 .mth-bannerOne p{
-    margin: 2.5rem 0 0 2.5rem;
     font-weight: 500;
     font-size: 22px;
     line-height: 28px;
 }
 
-.mth-bannerOne button{
-    margin: 2.5rem 0 0 2.5rem;
-    background: #00B800;
+.mth-btn{
+    background-color: #00B800;
     border: 1.5px solid #008F00;
     border-radius: 10px;
     font-size: 20px;
     color: #fff;
     padding: 8px 60px;
+    text-decoration: none;
+    cursor: pointer !important;
 }
 
+button.valid{
+    background-color: #00B800;
+    border: 1.5px solid #008F00;    
+    cursor: pointer !important;
+}
+
+
 .mth-content-two{
-    background-image: url('../assets/Background-home.png');
+    background-image: url('../Background-home.png');
+    background-size: contain;
 }
 
 h3{
-    font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-h3 span{
+h1 span,
+h2 span,
+h3 span,
+h4 span,
+h5 span,
+h6 span{
     color: #00CC00;
 }
 
-.mth-content-two p{
+p span{
+    color: #008F00;
+}
+
+.mth-content-two .mth-text p{
     font-size: 20px;
     margin: 1rem 15rem;
 }
@@ -44,7 +60,7 @@ h3 span{
 .mth-card-form{
     background: #fff;
     margin: 2rem 5rem;
-    padding: 1rem 5rem;
+    padding: 1rem 5rem ;
     border-radius: 20px;
 }
 
@@ -53,21 +69,347 @@ h3 span{
     font-weight: 400;
 }
 
-.content-form input,
-.content-form select{
-    width: 470px;
+.mth-form input,
+.mth-form select{
+    width: 450px;
     height: 48px;
     border-radius: 10px;
     border: 1.5px solid #D9D9D9;
-    padding: 0 10px;
+    padding: 0 14px;
     font-size: 14px;
     margin: 5px 0;
 }
 
-.content-form input:focus{
+.mth-form input:focus{
     background-color: #C5ECBF;
     border: 1.5px solid #008C00;
 }
+
+.mth-content-tdatos p{
+    font-size: 10px;
+    padding: 2px 10px 0;
+}
+
+.mth-content-tdatos p a{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+    
+}
+
+.mth-content-tdatos input{
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    -webkit-appearance: none;  
+    -moz-appearance: none;     
+    appearance: none;          
+    border: 2px solid #D9D9D9;    
+    border-radius: 5px;        
+    background-color: #ffffff; 
+    position: relative;
+}
+
+
+
+.mth-content-tdatos input:checked::before{
+    content: '';            
+    position: absolute;               
+    top: 2px;                          
+    left: 6px;                         
+    width: 8px;               
+    height: 12px;            
+    border: solid #00B800;               
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.form-button{
+    font-size: 14px;
+    padding: 0.8rem 6rem;
+}
+
+.content-cards{
+    justify-content: space-evenly;
+}
+
+.mth-card{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 263px;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    box-shadow: 2px 7px 23px -17px #000000;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.mth-card-two{
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 340px;
+    max-width: 100%;
+    box-shadow: 2px 7px 23px -17px #000000;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.mth-card-two .card-body{
+    padding: 0 12px;
+}
+
+.mth-card-two h5{
+    font-size: 15px;
+}
+
+.mth-card-two p{
+    font-size: 12.5px;
+    line-height: 14px;
+}
+
+
+.mth-card p{
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    padding: 8px 23px;
+    height: 6.9em;
+}
+
+.mth-card .mth-btn{
+    padding: 0px;
+    font-size: 14px;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mth-card .mth-btn-disabled{
+    padding: 5px 23px;
+    font-size: 14px;
+    background-color: #9D9D9D;
+    border-color: #9D9D9D;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.mth-btn-off{
+    background-color: #9D9D9D;
+    border: 1.5px solid #9D9D9D;
+    cursor: not-allowed !important;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px 60px;
+    text-decoration: none;
+}
+
+.mth-card-img{
+    background-color: #FFA025;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.mth-card-img{
+    height: 182px;
+    pointer-events: none;
+    align-content: flex-end;
+}
+
+.mth-etiqueta{
+    position: absolute;
+    width: 265px;
+    pointer-events: none;
+}
+
+.mth-card-logos{
+    height: 4rem;
+    pointer-events: none;
+}
+
+.content-footer img{
+    vertical-align: middle;
+    margin: 0 10px;
+    pointer-events: none;
+}
+.content-footer h5{
+    padding-top: 5px;
+}
+
+.content-footer p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content-footer{
+    border-top: 2px solid #00CC00;
+}
+
+.mth-vigilado{
+    position: absolute;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.mth-content-three {
+    background: #F5F5F5;
+}
+
+.error-message {
+    color: #FF0000;
+    font-size: 10px;
+    text-align: left;
+    display: none; 
+}
+
+.cards-event-one .content-left{
+    background: #FFA025;
+    color: #fff;
+    display: grid;
+    justify-content: normal;
+    align-items: self-end;
+}
+
+.cards-event-one h2 span{
+    color: #ffebb6;
+}
+
+.cards-event-one .content-left h2{
+    line-height: 32px;
+    width: 365px;
+}
+.cards-event-one .content-left p{
+    line-height: 24px;
+    font-size: 21px;
+    margin: 0;
+    width: 350px;
+}
+
+.cards-event-one .content-left div .img-tarjeta{
+    width: 157px;
+}
+
+.cards-event-one .content-right{
+    background-color: #f5f5f5;
+    
+}
+
+.mth-d-active{
+    display: flex !important;
+    transition: 10s ease;
+}
+
+.mth-d-none{
+    display: none;
+    transition: 10s ease;
+}
+
+.btn-diseable{
+    background-color: #F5F5F5;
+    border: 1.5px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-active{
+    background-color: #B3F0B3;
+    border: 1.5px solid #00B800;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #008F00;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.openFinanceDiv h6,
+.openHospitalDiv h6,
+.openExequialDiv h6,
+.openseguroDiv h6,
+.openAhorroDiv h6{
+    padding: 5px 5px 0 5px;
+}
+
+.openFinanceDiv .content-logo,
+.openExequialDiv .content-logo,
+.openHospitalDiv .content-logo,
+.openseguroDiv .content-logo,
+.openAhorroDiv .content-logo{
+    border-radius: 5px;
+    border: 1.5px solid #D9D9D9;
+    background-color: #fff;
+    height: 2.5rem;
+    padding: 0 10px;
+
+}
+
+.openAhorroDiv a,
+.openExequialDiv a,
+.openHospitalDiv a,
+.openseguroDiv a,
+.openFinanceDiv a{
+    color: #000;
+    text-decoration: none;
+}
+
+.openFinanceDiv .content-logo img,
+.openseguroDiv .content-logo img,
+.openHospitalDiv .content-logo img,
+.openExequialDiv .content-logo img,
+.openAhorroDiv .content-logo img{
+    vertical-align: middle;
+    width: 24px;
+}
+
+.openFinanceDiv .content-logo:hover,
+.openHospitalDiv .content-logo:hover,
+.openExequialDiv .content-logo:hover,
+.openseguroDiv .content-logo:hover,
+.openAhorroDiv .content-logo:hover {
+    background: #F5F5F5 !important;
+    color: #008F00;
+}
+
+.content-text{
+    line-height: 18px;
+}
+
+.content-text a{
+    color: #00CC00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-right .card{
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.content-right .card h1{
+    line-height: 100%;
+}
+
+.content-video img{
+    width: 513px;
+}
+
+.comunidad-img img{
+    width: 107px;
+    vertical-align: middle;
+}
+
 
 /* -------------------- estilos detalle producto crédito libranza --------------------------*/
 
@@ -84,15 +426,15 @@ h3 span{
     background-color: #F5F5F5;
 }
 
-.mth-form {
+.mth-form-int {
     width: 40% !important;
     background-color: #FEFEFE;
     box-shadow: 9px 12px 58.1px 0px #232e2440;
     border-radius: 13px;
 }
 
-.mth-form input,
-.mth-form select{
+.mth-form-int input,
+.mth-form-int select{
     height: 45px;
     border-radius: 6px;
     border: 0.75px solid #D9D9D9;
@@ -130,7 +472,10 @@ h3 span{
 }
 
 .mth-btn-registro {
-    background-color: #00B800;
+    
+    background-color: #9D9D9D;
+    border: 1.5px solid #9D9D9D;
+    cursor: not-allowed !important;
     color: #ffffff;
     border-radius: 6px;
     padding: 12px 41%;
@@ -219,25 +564,6 @@ img.mth-img-player-mijo {
 }
 
 
-/* ---------------------------- ESTILOS FOOTER --------------------------------*/
-.content-footer img{
-    vertical-align: middle;
-    margin: 0 10px;
-    pointer-events: none;
-}
-.content-footer h5{
-    padding-top: 5px;
-}
-
-.content-footer p{
-    font-size: 12px;
-    font-weight: 500;
-}
-/* .content-footer{
-    border-top: 2px solid #00CC00;
-} */
-.mth-vigilado{
-    position: absolute;
-    margin-top: 20px;
-    pointer-events: none;
+.content-thankyoupage div{
+    width: 700px;
 }
