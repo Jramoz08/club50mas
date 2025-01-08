@@ -8,6 +8,9 @@ if (form) {
         email: (element) => {
             return element.validity.valid && element.value.includes('@');
         },
+        cedula: (element) => {
+            return element.validity.valid && /^[0-9]{10}$/.test(element.value);
+        },
         name: (element) => {
             return element.value.trim() !== '' && !/\d/.test(element.value);
         },
@@ -18,10 +21,15 @@ if (form) {
         reason: (element) => {
             return element.value !== '';
         },
+        tipodocumento: (element) => {
+            return element.value !== '';
+        },
         authorize: (element) => {
             return element.checked;
         }
     };
+    
+    
 
     function showError(element, message) {
         const errorElement = document.getElementById(element.id + 'Error');
@@ -54,8 +62,10 @@ if (form) {
         switch (element.id) {
             case 'email': return 'Por favor introduce un correo electrónico válido';
             case 'name': return 'El nombre es obligatorio, no puede contener números.';
+            case 'cedula': return 'Ingrese un número de cedula valido.';
             case 'phone': return 'Por favor ingresa un número de teléfono válido';
             case 'reason': return 'Por favor selecciona una opción';
+            case 'tipodocumento ': return 'Por favor selecciona una opción';
             case 'authorize': return 'Es un campo requerido';
             default: return '';
         }

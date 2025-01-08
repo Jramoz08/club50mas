@@ -5,10 +5,18 @@
     margin-top: 7rem;
 }
 
+.mth-bannerOne h1 span{
+    color: #000;
+}
+
 .mth-bannerOne p{
     font-weight: 500;
     font-size: 22px;
     line-height: 28px;
+}
+
+.autorice-content p{
+    font-size: 22px;
 }
 
 .mth-btn{
