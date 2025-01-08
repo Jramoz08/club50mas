@@ -499,7 +499,7 @@ p span{
 }
 
 .mth-button-dropdown {
-    width: 90%;
+    width: 95%;
     text-align: left;
     border-radius: 10px;
     background-color: #ffffff;
@@ -523,7 +523,8 @@ img.mth-img-player-mijo {
 }
 
 .card {
-    height: 315px;
+    border: none;
+    height: 325px;
     border-radius: 15px;
     box-shadow: 0px 8px 16px 0px #00000023;
 }
