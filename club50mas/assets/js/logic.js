@@ -104,31 +104,31 @@ function returnPage() {
 }
 
 // Ocultar card slider
-document.addEventListener("DOMContentLoaded", function () {
-    const currentPageCard = "credito-libranza";
-    const replacementCardHTML = `
-    <div class="card text-center">
-        <div class="card-body d-flex flex-column">
-        <div class="d-flex align-items-center mb-3">
-            <img src="assets/tarjeta_posible.svg" alt="Nueva Opción" class="card-img-custom me-3">
-            <h4 class="card-title mx-4">Tarjeta <br><span class="mth-txt-color-h4">Posible</span></h4>
-        </div>
-        <p class="card-text">
-             Tarjeta Posible: Flexibilidad, cuotas fijas, compras nacionales e internacionales, sin seguros deudores ni avances.
-        </p>
-        <a href="#" class="btn btn-success mth-btn-carousel mt-2 mx-auto">Conoce más</a>
-        </div>
-    </div>
-    `;
+// document.addEventListener("DOMContentLoaded", function () {
+//     const currentPageCard = "credito-libranza";
+//     const replacementCardHTML = `
+//     <div class="card text-center">
+//         <div class="card-body d-flex flex-column">
+//         <div class="d-flex align-items-center mb-3">
+//             <img src="assets/tarjeta_posible.svg" alt="Nueva Opción" class="card-img-custom me-3">
+//             <h4 class="card-title mx-4">Tarjeta <br><span class="mth-txt-color-h4">Posible</span></h4>
+//         </div>
+//         <p class="card-text px-2">
+//              Tarjeta Posible: Flexibilidad, cuotas fijas, compras nacionales e internacionales, sin seguros deudores ni avances.
+//         </p>
+//         <a href="#" class="btn btn-success mth-btn-carousel mt-3 mx-auto">Conoce más</a>
+//         </div>
+//     </div>
+//     `;
 
-    const carousel = document.getElementById("carouselExampleIndicators");
-    const cards = carousel.querySelectorAll(".card-item");
+//     const carousel = document.getElementById("carouselExampleIndicators");
+//     const cards = carousel.querySelectorAll(".card-item");
 
-    cards.forEach((card) => {
-    const cardType = card.getAttribute("data-card");
-        if (cardType === currentPageCard) {
+//     cards.forEach((card) => {
+//     const cardType = card.getAttribute("data-card");
+//         if (cardType === currentPageCard) {
             
-            card.innerHTML = replacementCardHTML;
-        }
-    });
-});
+//             card.innerHTML = replacementCardHTML;
+//         }
+//     });
+// });
