@@ -415,16 +415,40 @@ p span{
 
 .mth-banner {
     height: 450px;
-    background-image: url('../bannerDPLibranza.jfif');
     background-size:cover;
     background-position: 0% 35%;   
 }
 
+.mth-banner-credito-libranza {
+    background-image: url('../bannerDPLibranza.jfif');
+}
+
 .mth-banner-tarjeta-posible {
-    height: 450px;
     background-image: url('../banner_tarjeta_posible.png');
-    background-size:cover;
-    background-position: 0% 35%;   
+}
+
+.mth-banner-tarjeta-credito {
+    background-image: url('../banner-tarjeta-credito.png');
+}
+
+.mth-banner-cuenta-ahorrar {
+    background-image: url('../banner-cuenta-ahorrar.png');
+}
+
+.mth-banner-cdt {
+    background-image: url('../banner-cdt.png');
+}
+
+.mth-banner-cuenta-nomina {
+    background-image: url('../banner-cuenta-nomina.png');
+}
+
+.mth-banner-cuenta-pension {
+    background-image: url('../banner-cuenta-pension.png');
+}
+
+.mth-banner-seguros {
+    background-image: url('../banner-seguros.png');
 }
 
 .mth-content-one-detalle-producto,
@@ -522,6 +546,10 @@ p span{
     padding: 2%;
 }
 
+.mth-button-dropdown-seguros {
+    width: 100%;
+}
+
 .mth-text-h4-color {
     color: #008F00;
     font-weight: 600;
@@ -578,7 +606,12 @@ img.mth-img-player-mijo {
     width: 224px;
 }
 
-
 .content-thankyoupage div{
     width: 700px;
 }
+
+.mth-li-guion {
+    list-style: none;
+}
+
+.mth-li-guion::before{content: "- "}
