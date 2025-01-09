@@ -11,42 +11,72 @@
     
 </head>
   <body>
-    <div class="mth-banner">
+    <div class="mth-banner-tarjeta-posible">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-6 mt-3 p-3 pb-4 mb-5 mth-form-int">
-                    <form class="row g-4 p-3" id="formInternas">
-                        <img src="assets/Bank.png" alt="" class="mth-img-bank mt-4 mx-auto d-block">
-                        <h5 class="text-center mt-0 mth-txt-h5">Ingresa tus datos <br> para recibir <span class="mth-txt-color-h5">más información</span></h5>
-                        <div class="col-12 mt-1">
-                          <label for="inputNombre" class="form-label mth-lbl-nombre">Nombre completo</label>
-                          <input type="text" class="form-control" id="nameInt" placeholder="Nombre" required>
-                          <div id="nameIntError" class="error-message"></div>
-                        </div>
-                        <div class="col-12 mt-3">
-                          <label for="inputCorreo" class="form-label mth-lbl-correo">Correo</label>
-                          <input type="text" class="form-control" id="emailInt" placeholder="Correo" required>
-                          <div id="emailIntError" class="error-message"></div>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <label for="inputCelular" class="form-label mth-lbl-celular">Celular</label>
-                            <input type="text" class="form-control" id="phoneInt" placeholder="321-456-789" required>
-                            <div id="phoneIntError" class="error-message"></div>
-                          </div>
-                        
-                        <div class="col-12 mt-3">
-                          <label for="inputAtencion" class="form-label mth-lbl-atencion">¿Fuiste atendido por un Mijo Físico?</label>
-                          <select class="form-select" id="atentionInt" required>
-                            <option value="">Selecciona</option>
-                            <option value="si">Si</option>
-                            <option value="no">No</option>
-                          </select>
-                          <div id="atentionIntError" class="error-message"></div>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="mth-btn-registro" id="MthBtnSummit">Registrate</button>
-                        </div>
-                    </form>
+                  <form class="row g-4 p-3" id="formInternas">
+                    <img src="assets/Bank.png" alt="" class="mth-img-bank mt-4 mx-auto d-block">
+                    <h5 class="text-center mt-0 mth-txt-h5">Ingresa tus datos <br> para recibir <span class="mth-txt-color-h5">más información</span></h5>
+                    <div class="col-12 mt-1">
+                      <label for="inputNombre" class="form-label mth-lbl-nombre">Nombre completo</label>
+                      <input type="text" class="form-control" id="nameInt" placeholder="Nombre" required>
+                      <div id="nameIntError" class="error-message"></div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <label for="inputCiudad" class="form-label mth-lbl-ciudad">Ciudad</label>
+                      <input type="text" class="form-control" id="ciudadInt" placeholder="Ciudad" required>
+                      <div id="ciudadIntError" class="error-message"></div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <label for="inputCorreo" class="form-label mth-lbl-correo">Correo</label>
+                      <input type="text" class="form-control" id="emailInt" placeholder="Correo" required>
+                      <div id="emailIntError" class="error-message"></div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <label for="inputTipoDocu" class="form-label mth-lbl-tipo-docu">Tipo de documento</label>
+                      <select class="form-select" id="tipoDocuInt" required>
+                        <option value="">Selecciona</option>
+                        <option value="cc">Cédula ciudadanía</option>
+                        <option value="ce">Cédula extranjería</option>
+                      </select>
+                      <div id="tipoDocuIntError" class="error-message"></div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <label for="inputDocumento" class="form-label mth-lbl-documento">Número de documento</label>
+                      <input type="text" class="form-control" id="documentoInt" placeholder="120723" required>
+                      <div id="documentoIntError" class="error-message"></div>
+                    </div>
+                    <div class="col-12 mt-3">
+                      <label for="inputCelular" class="form-label mth-lbl-celular">Celular</label>
+                      <input type="text" class="form-control" id="phoneInt" placeholder="321-456-789" required>
+                      <div id="phoneIntError" class="error-message"></div>
+                    </div>
+                    
+                    <div class="col-12 mt-3">
+                      <label for="inputAtencion" class="form-label mth-lbl-atencion">¿Fuiste atendido por un Mijo Físico?</label>
+                      <select class="form-select" id="atentionInt" required>
+                        <option value="">Selecciona</option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                      </select>
+                      <div id="atentionIntError" class="error-message"></div>
+                    </div>
+                    <div class="mth-content-form-internas col-12 d-flex mt-3 justify-content-center">
+                      <div class="d-flex justify-content-center align-items-center">
+                        <input id="authorizeInt" class="mth-check-form-int" type="checkbox" required>
+                      </div>
+                      <p class="me-0 ms-0">Al registrarme confirmo que he leído y autorizo el tratamiento de mis datos
+                        personales
+                        de acuerdo con la <a href="" target="_blank">Política de Datos Personales</a>.
+                        Así mismo, autorizo y solicito que me contacten a los canales autorizados para fines publicitarios,
+                        comerciales o de cobranza. Canales de contacto.</p>
+                    </div>
+                    <div id="authorizeIntError" class="error-message w-50 text-center"></div>
+                    <div class="col-12">
+                      <button type="submit" class="mth-btn-registro" id="MthBtnSummit">Registrate</button>
+                    </div>
+                </form>
                 </div>
             </div>
         </div>
@@ -125,7 +155,7 @@
                                           pensionados, creada para acompañarlos financieramente durante todo su ciclo de vida, 
                                           siempre buscando el alcance de sus metas.
                                         </p>
-                                        <a href="#" class="btn btn-success mth-btn-carousel mt-1 mx-auto">Conoce más</a>
+                                        <a href="/detalleProductoCuentaPension.html" class="btn btn-success mth-btn-carousel mt-1 mx-auto">Conoce más</a>
                                     </div>
                                 </div>
                               </div>
@@ -142,7 +172,7 @@
                                         <p class="card-text pb-2">Disfruta de beneficios exclusivos, compras flexibles, asistencia internacional y más con
                                           tu tarjeta de crédito Banco Popular.
                                         </p>
-                                        <a href="#" class="btn btn-success mth-btn-carousel mt-3 mx-auto">Conoce más</a>
+                                        <a href="/detalleProductoTarjetaCredito.html" class="btn btn-success mth-btn-carousel mt-3 mx-auto">Conoce más</a>
                                     </div>
                                 </div>
                               </div>
@@ -153,7 +183,7 @@
                                     <div class="card-body d-flex flex-column">
                                     <!-- Encabezado con imagen y título -->
                                     <div class="d-flex align-items-center mb-3">
-                                        <img src="assets/credito_libranza.svg" alt="Cuenta para ahorrar" class="card-img-custom me-3">
+                                        <img src="assets/cuenta-ahorrar.svg" alt="Cuenta para ahorrar" class="card-img-custom me-0">
                                         <h4 class="card-title"><span class="mth-txt-color-h4">Cuenta </span><br> para ahorrar</h4>
                                     </div>
                                     <!-- Texto y botón -->
@@ -161,7 +191,7 @@
                                       el dinero de manera fácil, ágil y segura a través 
                                       de todos los canales transaccionales del Banco Popular generando rentabilidad.
                                     </p>
-                                    <a href="#" class="btn btn-success mth-btn-carousel mt-1 mx-auto">Conoce más</a>
+                                    <a href="/detalleProductoCuentaAhorro.html" class="btn btn-success mth-btn-carousel mt-1 mx-auto">Conoce más</a>
                                     </div>
                                 </div>
                               </div>
