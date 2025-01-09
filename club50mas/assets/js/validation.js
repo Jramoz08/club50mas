@@ -11,6 +11,9 @@ if (form) {
         cedula: (element) => {
             return element.validity.valid && /^[0-9]{10}$/.test(element.value);
         },
+        city: (element) => {
+            return element.value.trim() !== '' && /^[a-zA-ZáéíóúÁÉÍÓÚ\s]+$/.test(element.value);
+        },
         name: (element) => {
             return element.value.trim() !== '' && !/\d/.test(element.value);
         },
@@ -28,6 +31,7 @@ if (form) {
             return element.checked;
         }
     };
+    
     
     
 
@@ -63,6 +67,7 @@ if (form) {
             case 'email': return 'Por favor introduce un correo electrónico válido';
             case 'name': return 'El nombre es obligatorio, no puede contener números.';
             case 'cedula': return 'Ingrese un número de cedula valido.';
+            case 'city': return 'El nombre de la ciudad solo puede contener letras y espacios.';
             case 'phone': return 'Por favor ingresa un número de teléfono válido';
             case 'reason': return 'Por favor selecciona una opción';
             case 'tipodocumento ': return 'Por favor selecciona una opción';
@@ -102,7 +107,7 @@ if (form) {
         });
 
         if (allValid) {
-            window.location.href = '../club50mas/thankyoupageComunidad.html'; 
+            window.location.href = '../thankyoupageComunidad.html'; 
         } else {
             alert('Por favor, corrige los errores');
         }
@@ -200,7 +205,7 @@ if (formInternas) {
         });
 
         if (allValid) {
-            window.location.href = '../club50mas/thankyoupageProducto.html'; 
+            window.location.href = '../thankyoupageProducto.html'; 
         } else {
             alert('Por favor, corrige los errores');
         }

@@ -47,11 +47,17 @@
       </div>
       <div class="content-form">
         <form class="mt-5 " action="" id="registrationForm">
-          <div class="mth-form d-flex justify-content-center align-items-center">
+          
+          <div class="mth-form-name col-12 d-grid ms-2 mb-3">
+            <label><b>Nombre completo</b></label>
+            <input id="name" type="text" placeholder="Nombre completo" required>
+            <div id="nameError" class="error-message"></div>
+          </div>
+          <div class="mth-form d-flex flex-wrap justify-content-center align-items-center">
             <div class="col-6 d-grid justify-content-center">
-              <label><b>Nombre completo</b></label>
-              <input id="name" type="text" placeholder="Nombre completo" required>
-              <div id="nameError" class="error-message"></div>
+              <label><b>Ciudad:</b></label>
+              <input id="city" type="text" placeholder="Escribe tu ciudad aqui" required>
+              <div id="cityError" class="error-message"></div>
               <label class="mt-3"><b>Tipo de documento</b></label>
               <select id="tipodocumento" required>
                 <option value="1">Cédula</option>
