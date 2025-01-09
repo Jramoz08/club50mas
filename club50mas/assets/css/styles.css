@@ -85,19 +85,19 @@ p span{
     border: 1.5px solid #008C00;
 }
 
-.mth-content-tdatos p{
+.mth-content-tdatos p, .mth-content-form-internas p{
     font-size: 10px;
     padding: 2px 10px 0;
 }
 
-.mth-content-tdatos p a{
+.mth-content-tdatos p a, .mth-content-form-internas p a{
     font-weight: bold;
     text-decoration: underline;
     color: #000;
     
 }
 
-.mth-content-tdatos input{
+.mth-content-tdatos input, .mth-content-form-internas input{
     width: 24px;
     height: 24px;
     border-radius: 20px;
@@ -112,7 +112,7 @@ p span{
 
 
 
-.mth-content-tdatos input:checked::before{
+.mth-content-tdatos input:checked::before, .mth-content-form-internas input:checked::before{
     content: '';            
     position: absolute;               
     top: 2px;                          
@@ -420,6 +420,13 @@ p span{
     background-position: 0% 35%;   
 }
 
+.mth-banner-tarjeta-posible {
+    height: 450px;
+    background-image: url('../banner_tarjeta_posible.png');
+    background-size:cover;
+    background-position: 0% 35%;   
+}
+
 .mth-content-one-detalle-producto,
 .mth-content-two-detalle-producto,
 .mth-content-three-detalle-producto {
@@ -442,6 +449,10 @@ p span{
     font-size: 14px;
 }
 
+.mth-check-form-int {
+    height: 24px !important;
+}
+
 .mth-img-bank {
     width: 22% !important;
 }
@@ -457,6 +468,8 @@ p span{
 
 .mth-lbl-nombre, 
 .mth-lbl-correo,
+.mth-lbl-tipo-docu,
+.mth-lbl-documento,
 .mth-lbl-celular,
 .mth-lbl-atencion {
     font-size: 14px;
@@ -466,6 +479,7 @@ p span{
 
 #inputNombre:focus,
 #inputCorreo:focus,
+#documentoInt:focus,
 #inputCelular:focus {
     background-color: #C5ECBF;
     border: 0.75px solid #008C00;

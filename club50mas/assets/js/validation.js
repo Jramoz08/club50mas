@@ -113,6 +113,9 @@ if (formInternas) {
         nameInt: (element) => {
             return element.value.trim() !== '' && !/\d/.test(element.value);
         },
+        ciudadInt: (element) => {
+            return element.value.trim() !== '' && !/\d/.test(element.value);
+        },
         phoneInt: (element) => {
             const phoneIntRegex = /^[+]?\d+$/;
             return phoneIntRegex.test(element.value) && element.value.length >= 10 && element.value.length <= 10;
@@ -120,6 +123,16 @@ if (formInternas) {
         atentionInt: (element) => {
             return element.value && element.value !== "default";
         },
+        tipoDocuInt: (element) => {
+            return element.value && element.value !== "default";
+        },
+        documentoInt: (element) => {
+            const documentoIntRegex = /^[+]?\d+$/;
+            return documentoIntRegex.test(element.value) && element.value.length >= 10 && element.value.length <= 10;
+        },
+        authorizeInt: (element) => {
+            return element.checked;
+        }
     };
 
     function showError(element, message) {
@@ -153,8 +166,12 @@ if (formInternas) {
         switch (element.id) {
             case 'emailInt': return 'Por favor introduce un correo electrónico válido';
             case 'nameInt': return 'El nombre es obligatorio, no puede contener números.';
+            case 'ciudadInt': return 'La ciudad es obligatoria, no puede contener números.';
             case 'phoneInt': return 'Por favor ingresa un número de teléfono válido';
             case 'atentionInt': return 'Por favor selecciona una opción';
+            case 'tipoDocuInt': return 'Por favor seleccione tipo de documento';
+            case 'documentoInt': return 'Por favor ingresa un número de documento válido';
+            case 'authorizeInt': return 'Es un campo requerido';
             default: return '';
         }
     }
