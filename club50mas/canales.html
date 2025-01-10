@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canales de atencion</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="mth-bannerOne mb-5">
+    <div class="d-flex justify-content-center">
+      <div class="col-5 col-sm-5 col-md-5 col-lg-5">
+        <h1 class="ms-5"><span>¿Cómo quieres que nos</span> comuniquemos contigo?</h1>
+        <p class="mt-5 ms-5">Conforme a lo dispuesto en la <strong> Ley 2300
+            de 2023</strong> ponemos a tu disposición este formulario para que elijas los canales por
+            los cuales deseas ser contactado.
+        </p>
+      </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-center">
+        <img src="assets/banner-canales.svg" alt="banner" class="w-75">
+      </div>
+    </div>
+  </div>
+  <div class="mth-content-three pt-4 pb-4">
+    <div id="formContent">
+      
+      <div class="content-form">
+        <form class="mt-5" action="" id="canalesForm">
+            <div class="mth-card-form pb-5">
+                <div class="text-center mt-3">
+                    <img src="./assets/Ringing.png" alt="ofter" class="mb-3">
+                  </div>
+                  <div class="text-center mb-5">
+                    <h5>Selecciona y actualiza los canales de contacto, por medio de los cuales <strong>ADL DIGITAL LABS S.A.S. y Banco Popular,</strong> podrá contactarte con fines publicitarios, comerciales y de gestión de cobranza.</span>
+                    </h5>
+                  </div>
+                  <div class="mth-form-name col-12 d-flex flex-wrap ms-2 mb-3">
+                    <label><b>Nombre completo</b></label>
+                    <input id="name" type="text" placeholder="Nombre completo" required>
+                    <div id="nameError" class="error-message"></div>
+                  </div>
+              <div class="mth-form justify-content-center align-items-center">
+                <div class="col-6 d-grid justify-content-start ps-2">
+                  <label><b>Ciudad:</b></label>
+                  <input id="city" type="text" placeholder="Escribe tu ciudad aqui" required>
+                  <div id="cityError" class="error-message"></div>
+                  <label class="mt-3"><b>Tipo de documento</b></label>
+                  <select id="tipodocumento" required>
+                    <option value="1">Cédula</option>
+                    <option value="2">Cédula de extranjeria</option>
+                    <option value="3">Tarjeta de identidad</option>
+                    <option value="4">Pasaporte</option>
+                  </select>
+                  <div id="tipodocumentoError" class="error-message"></div>
+                  <label class="mt-3"><b>Celular</b></label>
+                  <input id="phone" type="tel" placeholder="321-456-7890" required>
+                  <div id="phoneError" class="error-message"></div>
+                </div>
+                <div class="col-6 d-grid justify-content-end pe-2">
+                  <label><b>Tipo persona</b></label>
+                  <select id="tipoPersona" required>
+                    <option value="1">Natural</option>
+                    <option value="4">Juridica</option>
+                  </select>
+                  <div id="tipoPersonaError" class="error-message"></div>
+                  <label class="mt-3"><b>Número de documento:</b></label>
+                  <input type="text" id="cedula" name="cedula" maxlength="10" placeholder="120723" required>
+                  <div id="cedulaError" class="error-message"></div>
+                  <label class="mt-3"><b>Correo</b></label>
+                  <input id="email" type="text" placeholder="correo@dominio.com" required>
+                  <div id="emailError" class="error-message"></div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="text-center mb-5 autorice-content">
+                <p><strong>Autorizo a ADL DIGITAL LABS S.A.S. y Banco Popular,<br></strong>
+                    para ponerse en contacto a través de los siguientes canales<br>
+                    para fines publicitarios o comerciales:
+                </p>
+                <div class="autorice-content-input col-12 d-flex mt-3 justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5 ms-2">
+                    <input id="comerciales1" type="radio" name="comerciales" required>
+                  </div>
+                  <p class="me-0 ms-2 pt-3">Todos los habilitados</p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5">
+                    <input id="comerciales2" type="radio" name="comerciales" required>
+                  </div>
+                  <p class="me-0 ms-2 pt-3">Llamadas telefónicas y Mensaje de texto</p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5">
+                    <input id="comerciales3" type="radio" name="comerciales" required>
+                  </div>
+                  <p class="me-0 ms-2 pt-3">Correo electrónico y WhatsApp.</p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5">
+                    <input id="comerciales4" type="radio" name="comerciales" required>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <p class="me-0 ms-2 pt-2 mb-0">Llamadas telefónicas y mensajería por aplicación web y APP</p>
+                    <span class="ms-2">(Ejemplo: Cuando entras a tu portal bancario y ves mensajes dirigidos para ti)</span>
+                  </div>
+                </div>
+              </div>
+              <div id="comercialesError" class="error-message"></div>
+            </div>            
+            <div class="d-flex justify-content-center flex-wrap">
+              <div class="text-center mb-5 autorice-content">
+                <div class="autorice-content-input">
+                  <p><strong>Autorizo a ADL DIGITAL LABS S.A.S. y Banco Popular,</strong>
+                    para ponerse<br>en contacto a través de los siguientes canales para gestión de cobranza:
+                  </p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex mt-3 justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5 ms-2">
+                    <input id="cobranza1" type="radio" name="cobranza" required>
+                  </div>
+                  <p class="me-0 ms-2 pt-3">Todos los habilitados</p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5">
+                    <input id="cobranza2" type="radio" name="cobranza" required>
+                  </div>
+                  <p class="me-0 ms-2 pt-3">Llamadas telefónicas y Mensaje de texto</p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5">
+                    <input id="cobranza3" type="radio" name="cobranza" required>
+                  </div>
+                  <p class="me-0 ms-2 pt-3">Correo electrónico y WhatsApp.</p>
+                </div>
+                <div class="autorice-content-input col-12 d-flex justify-content-start ms-4">
+                  <div class="d-flex justify-content-center align-items-center ms-5">
+                    <input id="cobranza4" type="radio" name="cobranza" required>
+                  </div>
+                  <div class="d-flex flex-wrap">
+                    <p class="me-0 ms-2 pt-2 mb-0">Llamadas telefónicas y mensajería por aplicación web y APP</p>
+                    <span class="ms-2">(Ejemplo: Cuando entras a tu portal bancario y ves mensajes dirigidos para ti)</span>
+                  </div>
+                </div>
+              </div>
+              <div id="cobranzaError" class="error-message"></div>
+              <div class="text-center legal-form">
+                <p>La marcación de sus canales será atendida en un término de 5 días hábiles, en caso de no realizar la elección de los canales autoriza a (ecosistema) para utilizar los canales habituales de gestión, tales como: gestión telefónica, SMS, WhatsApp, correo electrónico, mensajería por aplicación web y APP.</p>
+              </div> 
+            </div>
+                  
+            <div class="text-center">
+                <button class="mth-btn-off form-button mt-3 mb-3" id="Mthbottom">
+                 Enviar
+                </button>
+              </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="content-footer text-center">
+      <div class="mth-vigilado">
+        <img src="./assets/VIGILADO.png" alt="vigilado">
+      </div>
+      <div class="justify-content-center align-items-center d-flex mt-4">
+        <h5>Desarrollado por </h5>
+        <img src="./assets/adl.svg" alt="ADL Digital Labs">
+        |
+        <img src="./assets/Logo.png" alt="ADL Digital Labs">
+      </div>
+      <p class="mt-2 mb-4">Pronto tendremos más productos y servicios para ti</p>
+    </div>
+  </footer>
+  <script src="assets/js/validation.js"></script>
+  <script src="assets/js/logic.js"></script>
+</body>
+
+</html>
