@@ -1,3 +1,6 @@
+body{
+    background-color: #f5f5f5;
+}
 .mth-bannerOne h1{
     color: #008F00;
     font-size: 48px;
@@ -458,7 +461,7 @@ p span{
 }
 
 .mth-form-int {
-    width: 40% !important;
+    width: 40%;
     background-color: #FEFEFE;
     box-shadow: 9px 12px 58.1px 0px #232e2440;
     border-radius: 13px;
@@ -478,7 +481,7 @@ p span{
 }
 
 .mth-img-bank {
-    width: 22% !important;
+    width: 7em !important;
 }
 
 .mth-txt-h5 {
@@ -509,15 +512,13 @@ p span{
     border: 0.75px solid #008C00;
 }
 
-.mth-btn-registro {
-    
+.mth-btn-registro {    
     background-color: #9D9D9D;
     border: 1.5px solid #9D9D9D;
     cursor: not-allowed !important;
     color: #ffffff;
     border-radius: 6px;
     padding: 12px 41%;
-    border: none;
     font-weight: 600;
 }
 
@@ -557,7 +558,7 @@ p span{
 }
 
 .mth-img-organizer {
-    width: 8% !important;
+    width: 8em !important;
 }
 
 img.mth-img-player-mijo {
@@ -615,3 +616,35 @@ img.mth-img-player-mijo {
 }
 
 .mth-li-guion::before{content: "- "}
+
+@media (max-width: 768px) {
+    
+    .mth-banner-credito-libranza {
+        height: 270px;
+        margin-bottom: 58em;
+    }
+
+    .mth-form-int {
+        width: 90%;
+        margin-top: 12em !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .mth-btn-registro {       
+        padding: 12px 16em;
+    }
+
+    .mth-button-dropdown {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .mth-img-organizer {
+        width: 12em;
+    }
+
+    img.mth-img-player-mijo {
+        width: 80em;
+    }
+  } 
