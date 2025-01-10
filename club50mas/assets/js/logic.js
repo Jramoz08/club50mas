@@ -93,7 +93,7 @@ function openExequial() {
 
 
 function Home() {
-    window.location.href = '../club50mas/index.html'
+    window.location.href = '../index.html'
 }
 
 
