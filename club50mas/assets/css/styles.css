@@ -938,6 +938,51 @@ img.mth-img-player-mijo {
     img.mth-img-player-mijo {
         width: 80em;
     }
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .mth-col-slider-responsive, .mth-col-slider-responsive-two {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .mth-col-slider-responsive-two {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+    
+}
+
+.mth-col-slider-responsive-two {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
+@media (min-width: 768px) {
+    
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(50%);
+    }
+    
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-50%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
 }
 
 .content-thankyoupage div {
