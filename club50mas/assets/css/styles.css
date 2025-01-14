@@ -740,6 +740,12 @@ img.mth-img-player-mijo {
     list-style: none;
 }
 .mth-li-guion::before{content: "- "}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
 /* Responsive Tablet*/
 
 @media (max-width: 768px) {
@@ -940,7 +946,7 @@ img.mth-img-player-mijo {
     .mth-banner-tarjeta-credito,
     .mth-banner-tarjeta-posible {
         height: 270px;
-        margin-bottom: 58em;
+        margin-bottom: 55em;
     }
 
     .mth-form-int {
@@ -984,8 +990,25 @@ img.mth-img-player-mijo {
     
 }
 
-@media (min-width: 768px) {
-    
+@media (min-width: 426px) and (max-width: 767px) {
+    .mth-banner-credito-libranza, 
+    .mth-banner-cdt, 
+    .mth-banner-cuenta-ahorrar, 
+    .mth-banner-cuenta-nomina, 
+    .mth-banner-cuenta-pension, 
+    .mth-banner-seguros, 
+    .mth-banner-tarjeta-credito, 
+    .mth-banner-tarjeta-posible {
+        height: 170px;
+        margin-bottom: 60em;
+    }
+    .mth-form-int { 
+        margin-top: 8em !important;
+    }
+    .mth-btn-registro {
+        padding: 12px 7rem;
+    }
+
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
       transform: translateX(25%);
@@ -997,7 +1020,93 @@ img.mth-img-player-mijo {
     }
 }
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
+@media (min-width: 375px) and (max-width: 425px) {
+    .mth-banner-credito-libranza, 
+    .mth-banner-cdt, 
+    .mth-banner-cuenta-ahorrar, 
+    .mth-banner-cuenta-nomina, 
+    .mth-banner-cuenta-pension, 
+    .mth-banner-seguros, 
+    .mth-banner-tarjeta-credito, 
+    .mth-banner-tarjeta-posible {
+        height: 125px;
+        margin-bottom: 64em;
+    }
+    .mth-form-int { 
+        margin-top: 6em !important;
+    }
+    .mth-btn-registro {
+        padding: 12px 5.5rem;
+    }
+    .mth-content-footer-responsive {
+        display: inline !important;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 374px) {
+    
+    .mth-banner-credito-libranza, 
+    .mth-banner-cdt, 
+    .mth-banner-cuenta-ahorrar, 
+    .mth-banner-cuenta-nomina, 
+    .mth-banner-cuenta-pension, 
+    .mth-banner-seguros, 
+    .mth-banner-tarjeta-credito, 
+    .mth-banner-tarjeta-posible {
+        height: 125px;
+        margin-bottom: 64em;
+    }
+    .mth-form-int { 
+        margin-top: 6em !important;
+    }
+    .mth-btn-registro {
+        padding: 12px 4rem !important;
+    }
+    .mth-content-footer-responsive {
+        display: inline !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .mth-btn-registro {
+        padding: 12px 4.5rem;
+    }
+    .mth-banner-credito-libranza, 
+    .mth-banner-cdt, 
+    .mth-banner-cuenta-ahorrar, 
+    .mth-banner-cuenta-nomina, 
+    .mth-banner-cuenta-pension, 
+    .mth-banner-seguros, 
+    .mth-banner-tarjeta-credito, 
+    .mth-banner-tarjeta-posible {
+        height: 125px;
+        margin-bottom: 62em;
+    }
+    .mth-form-int {
+        width: 95%;
+        margin-top: 5em !important;
+    }
+    .mth-d-flex-responsive {
+        display: inline !important;
+    }
+    .mth-card-slider-responsive {
+        height: 400px;
+    }
+    .mth-btn-carousel {
+        margin-top: auto !important;
+    }
+    .card-img-custom {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .mth-content-footer-responsive {
+        display: inline !important;
+    }
+    .mth-content-three-detalle-producto h1,
+    .mth-content-two-detalle-producto h4 {
+        font-size: large;
+    }
+    .mth-button-dropdown li {
+        font-size: small;
+    }
 }
