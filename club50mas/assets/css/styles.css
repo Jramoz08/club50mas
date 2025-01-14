@@ -117,11 +117,11 @@ p span {
     margin: 5px 0;
 }
 
-.mth-btn-frame{
-    width: 26%;
+.mth-btn-frame {
+    width: 30%;
 }
 
-.mth-btn-frame .mth-btn{
+.mth-btn-frame .mth-btn {
     padding: 4px 20px;
 }
 
@@ -134,786 +134,836 @@ p span {
     border: 1.5px solid #008C00;
 }
 
-    .mth-content-tdatos p,
-    .mth-content-form-internas p {
-        font-size: 10px;
-        padding: 2px 10px 0;
+.mth-content-tdatos p,
+.mth-content-form-internas p {
+    font-size: 10px;
+    padding: 2px 10px 0;
+}
+
+.mth-content-tdatos p a,
+.mth-content-form-internas p a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #000;
+
+}
+
+.mth-content-tdatos input,
+.mth-content-form-internas input {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.autorice-content input {
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #D9D9D9;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.autorice-content input:checked::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 8px;
+    height: 12px;
+    border: solid #00B800;
+}
+
+.mth-content-tdatos input:checked::before,
+.mth-content-form-internas input:checked::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 8px;
+    height: 12px;
+    border: solid #00B800;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.form-button {
+    font-size: 14px;
+    padding: 0.8rem 6rem;
+}
+
+.content-cards {
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.mth-card {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 263px;
+    max-width: 100%;
+    padding-bottom: 2rem;
+    box-shadow: 2px 7px 23px -17px #000000;
+    border-radius: 20px;
+    margin-top: 2px;
+}
+
+.mth-card-two {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 340px;
+    max-width: 100%;
+    box-shadow: 2px 7px 23px -17px #000000;
+    border-radius: 10px;
+    margin-top: 2px;
+}
+
+.mth-card-two .card-body {
+    padding: 0 12px;
+}
+
+.mth-card-two h5 {
+    font-size: 15px;
+}
+
+.mth-card-two p {
+    font-size: 12.5px;
+    line-height: 14px;
+}
+
+
+.mth-card p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    padding: 8px 23px;
+    height: 6.9em;
+}
+
+.mth-card .mth-btn {
+    padding: 0px;
+    font-size: 14px;
+    width: 124px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mth-card .mth-btn-disabled {
+    padding: 5px 23px;
+    font-size: 14px;
+    background-color: #9D9D9D;
+    border-color: #9D9D9D;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.mth-btn-off {
+    background-color: #9D9D9D;
+    border: 1.5px solid #9D9D9D;
+    cursor: not-allowed !important;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px 60px;
+    text-decoration: none;
+}
+
+.mth-card-img {
+    background-color: #FFA025;
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.mth-card-img {
+    height: 155px;
+    pointer-events: none;
+    align-content: flex-end;
+}
+
+.mth-etiqueta {
+    position: absolute;
+    width: 265px;
+    pointer-events: none;
+}
+
+.mth-card-logos {
+    height: 4rem;
+    pointer-events: none;
+}
+
+.content-footer img {
+    vertical-align: middle;
+    margin: 0 10px;
+    pointer-events: none;
+}
+
+.content-footer h5 {
+    padding-top: 5px;
+}
+
+.content-footer p {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.content-footer {
+    border-top: 2px solid #00CC00;
+}
+
+.mth-vigilado {
+    position: absolute;
+    margin-top: 20px;
+    pointer-events: none;
+}
+
+.mth-content-three {
+    background: #F5F5F5;
+    padding-bottom: 3rem;
+}
+
+.error-message {
+    color: #FF0000;
+    font-size: 10px;
+    text-align: left;
+    display: none;
+}
+
+.cards-event-one .content-left {
+    background: #FFA025;
+    color: #fff;
+    display: grid;
+    justify-content: normal;
+    align-items: self-end;
+}
+
+.cards-event-one h2 span {
+    color: #ffebb6;
+}
+
+.cards-event-one .content-left h2 {
+    line-height: 32px;
+    width: 365px;
+}
+
+.cards-event-one .content-left p {
+    line-height: 24px;
+    font-size: 21px;
+    margin: 0;
+    width: 350px;
+}
+
+.cards-event-one .content-left div .img-tarjeta {
+    width: 157px;
+}
+
+.cards-event-one .content-right {
+    background-color: #f5f5f5;
+
+}
+
+.mth-d-active {
+    display: flex !important;
+    transition: 10s ease;
+}
+
+.mth-d-none {
+    display: none;
+    transition: 10s ease;
+}
+
+.btn-diseable {
+    background-color: #F5F5F5;
+    border: 1.5px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.btn-active {
+    background-color: #B3F0B3;
+    border: 1.5px solid #00B800;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #008F00;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.openFinanceDiv h6,
+.openHospitalDiv h6,
+.openExequialDiv h6,
+.openseguroDiv h6,
+.openAhorroDiv h6 {
+    padding: 5px 5px 0 5px;
+}
+
+.openFinanceDiv .content-logo,
+.openExequialDiv .content-logo,
+.openHospitalDiv .content-logo,
+.openseguroDiv .content-logo,
+.openAhorroDiv .content-logo {
+    border-radius: 5px;
+    border: 1.5px solid #D9D9D9;
+    background-color: #fff;
+    height: 2.5rem;
+    padding: 0 10px;
+
+}
+
+.openAhorroDiv a,
+.openExequialDiv a,
+.openHospitalDiv a,
+.openseguroDiv a,
+.openFinanceDiv a {
+    color: #000;
+    text-decoration: none;
+}
+
+.openFinanceDiv .content-logo img,
+.openseguroDiv .content-logo img,
+.openHospitalDiv .content-logo img,
+.openExequialDiv .content-logo img,
+.openAhorroDiv .content-logo img {
+    vertical-align: middle;
+    width: 24px;
+}
+
+.openFinanceDiv .content-logo:hover,
+.openHospitalDiv .content-logo:hover,
+.openExequialDiv .content-logo:hover,
+.openseguroDiv .content-logo:hover,
+.openAhorroDiv .content-logo:hover {
+    background: #F5F5F5 !important;
+    color: #008F00;
+}
+
+.content-text {
+    line-height: 18px;
+}
+
+.content-text a {
+    color: #00CC00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-right .card {
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.content-right .card h1 {
+    line-height: 100%;
+}
+
+.content-video img {
+    width: 513px;
+}
+
+.comunidad-img img {
+    width: 107px;
+    vertical-align: middle;
+}
+
+
+/* -------------------- estilos detalle producto crédito libranza --------------------------*/
+
+.mth-banner {
+    height: 450px;
+    background-image: url('../bannerDPLibranza.jfif');
+    background-size: cover;
+    background-position: 0% 35%;
+}
+
+.mth-banner-tarjeta-posible {
+    height: 450px;
+    background-image: url('../banner_tarjeta_posible.png');
+    background-size: cover;
+    background-position: 0% 35%;
+    background-size: cover;
+    background-position: 0% 35%;
+}
+
+.mth-banner-credito-libranza {
+    background-image: url('../bannerDPLibranza.jfif');
+}
+
+.mth-banner-tarjeta-posible {
+    background-image: url('../banner_tarjeta_posible.png');
+}
+
+.mth-banner-tarjeta-credito {
+    background-image: url('../banner-tarjeta-credito.png');
+}
+
+.mth-banner-cuenta-ahorrar {
+    background-image: url('../banner-cuenta-ahorrar.png');
+}
+
+.mth-banner-cdt {
+    background-image: url('../banner-cdt.png');
+}
+
+.mth-banner-cuenta-nomina {
+    background-image: url('../banner-cuenta-nomina.png');
+}
+
+.mth-banner-cuenta-pension {
+    background-image: url('../banner-cuenta-pension.png');
+}
+
+.mth-banner-seguros {
+    background-image: url('../banner-seguros.png');
+}
+
+.mth-content-one-detalle-producto,
+.mth-content-two-detalle-producto,
+.mth-content-three-detalle-producto {
+    background-color: #F5F5F5;
+}
+
+.mth-form-int {
+    width: 40% !important;
+    background-color: #FEFEFE;
+    box-shadow: 9px 12px 58.1px 0px #232e2440;
+    border-radius: 13px;
+}
+
+.mth-form-int input,
+.mth-form-int select {
+    height: 45px;
+    border-radius: 6px;
+    border: 0.75px solid #D9D9D9;
+    /* padding: 0 8px; */
+    font-size: 14px;
+}
+
+.mth-check-form-int {
+    height: 24px !important;
+}
+
+.mth-img-bank {
+    width: 22% !important;
+}
+
+.mth-txt-h5 {
+    font-weight: 700;
+}
+
+.mth-txt-color-h4,
+.mth-txt-color-h5 {
+    color: #00B800;
+}
+
+.mth-lbl-nombre,
+.mth-lbl-correo,
+.mth-lbl-tipo-docu,
+.mth-lbl-documento,
+.mth-lbl-celular,
+.mth-lbl-atencion {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+#inputNombre:focus,
+#inputCorreo:focus,
+#documentoInt:focus,
+#inputCelular:focus {
+    background-color: #C5ECBF;
+    border: 0.75px solid #008C00;
+}
+
+.mth-btn-registro {
+
+    background-color: #9D9D9D;
+    border: 1.5px solid #9D9D9D;
+    cursor: not-allowed !important;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 12px 41%;
+    border: none;
+    font-weight: 600;
+}
+
+.mth-btn-regresar {
+    border-radius: 8px;
+    border: 0.5px solid #D8D8D8;
+    color: #000;
+    background-color: #FFFFFF;
+    padding: 6px 2%;
+}
+
+.mth-chevron-left {
+    color: #00CC00;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.mth-button-dropdown {
+    width: 95%;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #D9D9D9;
+    color: #000;
+    padding: 2%;
+}
+
+.mth-button-dropdown-seguros {
+    width: 100%;
+}
+
+.mth-text-h4-color {
+    color: #008F00;
+    font-weight: 600;
+    line-height: 35px;
+}
+
+.mth-img-organizer {
+    width: 8% !important;
+}
+
+img.mth-img-player-mijo {
+    width: 80%;
+}
+
+.card {
+    border: none;
+    height: 325px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px #00000023;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+    background-color: #00CC00 !important;
+}
+
+.carousel-indicators {
+    position: static !important;
+    margin-top: 1rem !important;
+}
+
+.carousel-indicators .active {
+    opacity: 1 !important;
+    background-color: #00CC00 !important;
+}
+
+.card-text {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+    line-height: 13px;
+    text-align: left;
+}
+
+.mth-btn-carousel {
+    border-radius: 32px;
+    background-color: #C5ECBF;
+    color: #008C00;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    border: none;
+    width: 224px;
+}
+
+
+.content-thankyoupage div {
+    width: 700px;
+}
+
+.form-title {
+    margin: 0 6rem;
+}
+
+.mth-form {
+    display: flex;
+
+}
+
+.mth-content-tdatos {
+    padding: 0 12rem;
+}
+
+.slide-mb {
+    display: none;
+}
+
+/* Responsive Tablet*/
+
+@media (max-width: 768px) {
+
+    .mth-form {
+        display: grid;
     }
 
-        .mth-content-tdatos p a,
-        .mth-content-form-internas p a {
-            font-weight: bold;
-            text-decoration: underline;
-            color: #000;
-
-        }
-
-            .mth-content-tdatos input,
-            .mth-content-form-internas input {
-                width: 24px;
-                height: 24px;
-                border-radius: 20px;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                border: 2px solid #D9D9D9;
-                border-radius: 5px;
-                background-color: #ffffff;
-                position: relative;
-            }
-
-            .autorice-content input {
-                width: 24px;
-                height: 24px;
-                border-radius: 20px;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                border: 2px solid #D9D9D9;
-                border-radius: 5px;
-                background-color: #ffffff;
-                position: relative;
-            }
-
-            .autorice-content input:checked::before {
-                content: '';
-                position: absolute;
-                top: 2px;
-                left: 6px;
-                width: 8px;
-                height: 12px;
-                border: solid #00B800;
-            }
-
-                .mth-content-tdatos input:checked::before,
-                .mth-content-form-internas input:checked::before {
-                    content: '';
-                    position: absolute;
-                    top: 2px;
-                    left: 6px;
-                    width: 8px;
-                    height: 12px;
-                    border: solid #00B800;
-                    border-width: 0 3px 3px 0;
-                    transform: rotate(45deg);
-                }
-
-                .form-button {
-                    font-size: 14px;
-                    padding: 0.8rem 6rem;
-                }
-
-                .content-cards {
-                    justify-content: space-evenly;
-                    display: flex;
-                }
-
-                .mth-card {
-                    background-color: #fff;
-                    border-radius: 10px;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width: 263px;
-                    max-width: 100%;
-                    padding-bottom: 2rem;
-                    box-shadow: 2px 7px 23px -17px #000000;
-                    border-radius: 20px;
-                    margin-top: 2px;
-                }
-
-                .mth-card-two {
-                    background-color: #fff;
-                    border-radius: 10px;
-                    display: flex;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    width: 340px;
-                    max-width: 100%;
-                    box-shadow: 2px 7px 23px -17px #000000;
-                    border-radius: 10px;
-                    margin-top: 2px;
-                }
-
-                .mth-card-two .card-body {
-                    padding: 0 12px;
-                }
-
-                .mth-card-two h5 {
-                    font-size: 15px;
-                }
-
-                .mth-card-two p {
-                    font-size: 12.5px;
-                    line-height: 14px;
-                }
-
-
-                .mth-card p {
-                    font-size: 20px;
-                    line-height: 25px;
-                    margin: 0;
-                    padding: 8px 23px;
-                    height: 6.9em;
-                }
-
-                .mth-card .mth-btn {
-                    padding: 0px;
-                    font-size: 14px;
-                    width: 124px;
-                    height: 40px;
-                    text-align: center;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-
-                .mth-card .mth-btn-disabled {
-                    padding: 5px 23px;
-                    font-size: 14px;
-                    background-color: #9D9D9D;
-                    border-color: #9D9D9D;
-                    cursor: not-allowed;
-                    pointer-events: none;
-                }
-
-                .mth-btn-off {
-                    background-color: #9D9D9D;
-                    border: 1.5px solid #9D9D9D;
-                    cursor: not-allowed !important;
-                    border-radius: 10px;
-                    font-size: 20px;
-                    color: #fff;
-                    padding: 8px 60px;
-                    text-decoration: none;
-                }
-
-                .mth-card-img {
-                    background-color: #FFA025;
-                    border-radius: 10px 10px 0 0;
-                    width: 100%;
-                }
-
-                .mth-card-img {
-                    height: 155px;
-                    pointer-events: none;
-                    align-content: flex-end;
-                }
-
-                .mth-etiqueta {
-                    position: absolute;
-                    width: 265px;
-                    pointer-events: none;
-                }
-
-                .mth-card-logos {
-                    height: 4rem;
-                    pointer-events: none;
-                }
-
-                .content-footer img {
-                    vertical-align: middle;
-                    margin: 0 10px;
-                    pointer-events: none;
-                }
-
-                .content-footer h5 {
-                    padding-top: 5px;
-                }
-
-                .content-footer p {
-                    font-size: 12px;
-                    font-weight: 500;
-                }
-
-                .content-footer {
-                    border-top: 2px solid #00CC00;
-                }
-
-                .mth-vigilado {
-                    position: absolute;
-                    margin-top: 20px;
-                    pointer-events: none;
-                }
-
-                .mth-content-three {
-                    background: #F5F5F5;
-                    padding-bottom: 3rem;
-                }
-
-                .error-message {
-                    color: #FF0000;
-                    font-size: 10px;
-                    text-align: left;
-                    display: none;
-                }
-
-                .cards-event-one .content-left {
-                    background: #FFA025;
-                    color: #fff;
-                    display: grid;
-                    justify-content: normal;
-                    align-items: self-end;
-                }
-
-                .cards-event-one h2 span {
-                    color: #ffebb6;
-                }
-
-                .cards-event-one .content-left h2 {
-                    line-height: 32px;
-                    width: 365px;
-                }
-
-                .cards-event-one .content-left p {
-                    line-height: 24px;
-                    font-size: 21px;
-                    margin: 0;
-                    width: 350px;
-                }
-
-                .cards-event-one .content-left div .img-tarjeta {
-                    width: 157px;
-                }
-
-                .cards-event-one .content-right {
-                    background-color: #f5f5f5;
-
-                }
-
-                .mth-d-active {
-                    display: flex !important;
-                    transition: 10s ease;
-                }
-
-                .mth-d-none {
-                    display: none;
-                    transition: 10s ease;
-                }
-
-                .btn-diseable {
-                    background-color: #F5F5F5;
-                    border: 1.5px solid #D9D9D9;
-                    border-radius: 5px;
-                    padding: 5px 10px;
-                    color: #000;
-                    text-decoration: none;
-                    font-size: 12px;
-                    cursor: pointer;
-                }
-
-                .btn-active {
-                    background-color: #B3F0B3;
-                    border: 1.5px solid #00B800;
-                    border-radius: 5px;
-                    padding: 5px 10px;
-                    color: #008F00;
-                    text-decoration: none;
-                    font-size: 12px;
-                    cursor: pointer;
-                }
-
-                .openFinanceDiv h6,
-                .openHospitalDiv h6,
-                .openExequialDiv h6,
-                .openseguroDiv h6,
-                .openAhorroDiv h6 {
-                    padding: 5px 5px 0 5px;
-                }
-
-                .openFinanceDiv .content-logo,
-                .openExequialDiv .content-logo,
-                .openHospitalDiv .content-logo,
-                .openseguroDiv .content-logo,
-                .openAhorroDiv .content-logo {
-                    border-radius: 5px;
-                    border: 1.5px solid #D9D9D9;
-                    background-color: #fff;
-                    height: 2.5rem;
-                    padding: 0 10px;
-
-                }
-
-                .openAhorroDiv a,
-                .openExequialDiv a,
-                .openHospitalDiv a,
-                .openseguroDiv a,
-                .openFinanceDiv a {
-                    color: #000;
-                    text-decoration: none;
-                }
-
-                .openFinanceDiv .content-logo img,
-                .openseguroDiv .content-logo img,
-                .openHospitalDiv .content-logo img,
-                .openExequialDiv .content-logo img,
-                .openAhorroDiv .content-logo img {
-                    vertical-align: middle;
-                    width: 24px;
-                }
-
-                .openFinanceDiv .content-logo:hover,
-                .openHospitalDiv .content-logo:hover,
-                .openExequialDiv .content-logo:hover,
-                .openseguroDiv .content-logo:hover,
-                .openAhorroDiv .content-logo:hover {
-                    background: #F5F5F5 !important;
-                    color: #008F00;
-                }
-
-                .content-text {
-                    line-height: 18px;
-                }
-
-                .content-text a {
-                    color: #00CC00;
-                    text-decoration: none;
-                    font-weight: bold;
-                }
-
-                .content-right .card {
-                    border-radius: 20px;
-                    padding: 30px;
-                }
-
-                .content-right .card h1 {
-                    line-height: 100%;
-                }
-
-                .content-video img {
-                    width: 513px;
-                }
-
-                .comunidad-img img {
-                    width: 107px;
-                    vertical-align: middle;
-                }
-
-
-                /* -------------------- estilos detalle producto crédito libranza --------------------------*/
-
-                .mth-banner {
-                    height: 450px;
-                    background-image: url('../bannerDPLibranza.jfif');
-                    background-size: cover;
-                    background-position: 0% 35%;
-                }
-
-                .mth-banner-tarjeta-posible {
-                    height: 450px;
-                    background-image: url('../banner_tarjeta_posible.png');
-                    background-size: cover;
-                    background-position: 0% 35%;
-                    background-size: cover;
-                    background-position: 0% 35%;
-                }
-
-                .mth-banner-credito-libranza {
-                    background-image: url('../bannerDPLibranza.jfif');
-                }
-
-                .mth-banner-tarjeta-posible {
-                    background-image: url('../banner_tarjeta_posible.png');
-                }
-
-                .mth-banner-tarjeta-credito {
-                    background-image: url('../banner-tarjeta-credito.png');
-                }
-
-                .mth-banner-cuenta-ahorrar {
-                    background-image: url('../banner-cuenta-ahorrar.png');
-                }
-
-                .mth-banner-cdt {
-                    background-image: url('../banner-cdt.png');
-                }
-
-                .mth-banner-cuenta-nomina {
-                    background-image: url('../banner-cuenta-nomina.png');
-                }
-
-                .mth-banner-cuenta-pension {
-                    background-image: url('../banner-cuenta-pension.png');
-                }
-
-                .mth-banner-seguros {
-                    background-image: url('../banner-seguros.png');
-                }
-
-                .mth-content-one-detalle-producto,
-                .mth-content-two-detalle-producto,
-                .mth-content-three-detalle-producto {
-                    background-color: #F5F5F5;
-                }
-
-                .mth-form-int {
-                    width: 40% !important;
-                    background-color: #FEFEFE;
-                    box-shadow: 9px 12px 58.1px 0px #232e2440;
-                    border-radius: 13px;
-                }
-
-                .mth-form-int input,
-                .mth-form-int select {
-                    height: 45px;
-                    border-radius: 6px;
-                    border: 0.75px solid #D9D9D9;
-                    /* padding: 0 8px; */
-                    font-size: 14px;
-                }
-
-                .mth-check-form-int {
-                    height: 24px !important;
-                }
-
-                .mth-img-bank {
-                    width: 22% !important;
-                }
-
-                .mth-txt-h5 {
-                    font-weight: 700;
-                }
-
-                .mth-txt-color-h4,
-                .mth-txt-color-h5 {
-                    color: #00B800;
-                }
-
-                .mth-lbl-nombre,
-                .mth-lbl-correo,
-                .mth-lbl-tipo-docu,
-                .mth-lbl-documento,
-                .mth-lbl-celular,
-                .mth-lbl-atencion {
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 12px;
-                }
-
-                #inputNombre:focus,
-                #inputCorreo:focus,
-                #documentoInt:focus,
-                #inputCelular:focus {
-                    background-color: #C5ECBF;
-                    border: 0.75px solid #008C00;
-                }
-
-                .mth-btn-registro {
-
-                    background-color: #9D9D9D;
-                    border: 1.5px solid #9D9D9D;
-                    cursor: not-allowed !important;
-                    color: #ffffff;
-                    border-radius: 6px;
-                    padding: 12px 41%;
-                    border: none;
-                    font-weight: 600;
-                }
-
-                .mth-btn-regresar {
-                    border-radius: 8px;
-                    border: 0.5px solid #D8D8D8;
-                    color: #000;
-                    background-color: #FFFFFF;
-                    padding: 6px 2%;
-                }
-
-                .mth-chevron-left {
-                    color: #00CC00;
-                    font-size: 12px;
-                    text-align: left;
-                    font-weight: 700;
-                }
-
-                .mth-button-dropdown {
-                    width: 95%;
-                    text-align: left;
-                    border-radius: 10px;
-                    background-color: #ffffff;
-                    border: 1px solid #D9D9D9;
-                    color: #000;
-                    padding: 2%;
-                }
-
-                .mth-button-dropdown-seguros {
-                    width: 100%;
-                }
-
-                .mth-text-h4-color {
-                    color: #008F00;
-                    font-weight: 600;
-                    line-height: 35px;
-                }
-
-                .mth-img-organizer {
-                    width: 8% !important;
-                }
-
-                img.mth-img-player-mijo {
-                    width: 80%;
-                }
-
-                .card {
-                    border: none;
-                    height: 325px;
-                    border-radius: 15px;
-                    box-shadow: 0px 8px 16px 0px #00000023;
-                }
-
-                .carousel-indicators [data-bs-target] {
-                    width: 15px !important;
-                    height: 15px !important;
-                    border-radius: 50% !important;
-                    background-color: #00CC00 !important;
-                }
-
-                .carousel-indicators {
-                    position: static !important;
-                    margin-top: 1rem !important;
-                }
-
-                .carousel-indicators .active {
-                    opacity: 1 !important;
-                    background-color: #00CC00 !important;
-                }
-
-                .card-text {
-                    font-size: 12px;
-                    font-weight: 400;
-                    color: #000;
-                    line-height: 13px;
-                    text-align: left;
-                }
-
-                .mth-btn-carousel {
-                    border-radius: 32px;
-                    background-color: #C5ECBF;
-                    color: #008C00;
-                    font-size: 12px;
-                    font-weight: 500;
-                    line-height: 17px;
-                    border: none;
-                    width: 224px;
-                }
-
-
-                .content-thankyoupage div {
-                    width: 700px;
-                }
-
-                .form-title {
-                    margin: 0 6rem;
-                }
-
-                .mth-form {
-                    display: flex;
-
-                }
-
-                .mth-content-tdatos {
-                    padding: 0 12rem;
-                }
-
-                .slide-mb {
-                    display: none;
-                }
-
-                /* Responsive Tablet*/
-
-                @media (max-width: 768px) {
-
-                    .mth-form {
-                        display: grid;
-                    }
-
-                    .mth-form div {
-                        width: 100%;
-                    }
-
-                    .mth-text h2 {
-                        font-size: 42px !important;
-                    }
-
-                    .mth-bannerOne div:nth-of-type(1) {
-                        flex-direction: column-reverse;
-                        text-align: center;
-                    }
-
-                    .mth-bannerOne div>div {
-                        width: 100% !important;
-                    }
-
-                    .mth-bannerOne p {
-                        font-size: 28px;
-                        margin: 0 8rem !important;
-                        line-height: 33px;
-                    }
-
-                    .mth-bannerOne button {
-                        margin: 2rem 0 !important;
-                        padding: 8px 133px;
-                        font-size: 30px;
-                    }
-
-                    .mth-content-two .mth-text p {
-                        margin: 1rem 8rem;
-                        ;
-                    }
-
-                    .mth-card-form {
-                        margin: 2rem 2.5rem;
-                        padding: 1rem 2rem;
-                    }
-
-                    .form-title {
-                        margin: 0 3rem;
-                    }
-
-                    .mth-form input,
-                    .mth-form-name input,
-                    .mth-form select {
-                        width: 600px;
-
-                    }
-
-                    .mth-bannerOne h1 {
-                        margin: 1rem 0 !important;
-                        font-size: 50px;
-                        padding: 0 4rem;
-                    }
-
-                    .mth-content-tdatos {
-                        padding: 0 1rem;
-                    }
-
-                    .mth-btn-off {
-                        padding: 8px 252px;
-                    }
-
-                    .mth-card-two {
-                        flex-wrap: nowrap;
-                    }
-
-                    .mth-dnone {
-                        display: none;
-                    }
-
-                    .mth-slider {
-                        flex-wrap: nowrap;
-                        overflow-x: scroll;
-                        scrollbar-width: none;
-                        margin-left: 25px;
-                    }
-
-                    .mth-card {
-                        margin: 0 20px;
-                        width: 263px;
-                    }
-
-                    .mth-card p {
-                        padding: 8px 22px;
-                        line-height: 25px;
-                        height: 6em;
-                    }
-
-                    .mth-card .pb-5 {
-                        padding: 0 !important;
-                    }
-
-                    .mth-card-img {
-                        width: 263px;
-                    }
-
-                    .mth-content-three {
-                        padding-bottom: 0 !important;
-                    }
-
-                    .carousel-indicators {
-                        margin-bottom: 0 !important;
-
-                    }
-
-                    .slide-mb {
-                        display: block;
-                    }
-
-                    .mth-top {
-                        margin-top: 3rem;
-                    }
-
-                    .mth-d-active {
-                        display: grid !important;
-                    }
-
-                    .cards-event-one .col-6 {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: row-reverse;
-                        justify-content: start;
-                        align-items: center;
-                    }
-
-                    .comunidad-img {
-                        width: 96% !important;
-                    }
-
-                    .content-left div:nth-of-type(1) {
-                        text-align: center;
-                        width: 65%;
-                    }
-
-                    .tarjetabp {
-                        padding-top: 7rem;
-                    }
-
-                    .content-right .card {
-                        margin-top: -55px;
-                    }
-
-                    .content-right .card h1 {
-                        font-size: 50px;
-                        margin-bottom: 20px;
-                    }
-
-                    .mth-text h1 {
-                        font-size: 42px;
-                        padding: 0 8rem;
-                    }
-
-                    .mth-content-three h1 {
-                        font-size: 42px;
-                        padding: 0 8rem;
-                    }
-
-                    .mth-card-two h5 {
-                        font-size: 19px;
-                    }
-
-                    .mth-card-two p {
-                        font-size: 16px;
-                    }
-
-                    .mth-card-two {
-                        width: 388px;
-                    }
-
-                    .card-two-img {
-                        text-align: end;
-                    }
-
-                    .autorice-content {
-                        width: 81%;
-                    }
-
-                    .legal-form {
-                        width: 85%;
-                    }
-                }
-
-                .content-thankyoupage div {
-                    width: 700px;
-                }
-
-                .mth-li-guion {
-                    list-style: none;
-                }
+    .mth-form div {
+        width: 100%;
+    }
+
+    .mth-text h2 {
+        font-size: 42px !important;
+    }
+
+    .mth-bannerOne div:nth-of-type(1) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .mth-bannerOne div>div {
+        width: 100% !important;
+    }
+
+    .mth-bannerOne p {
+        font-size: 28px;
+        margin: 0 8rem !important;
+        line-height: 33px;
+    }
+
+    .mth-bannerOne button {
+        margin: 2rem 0 !important;
+        padding: 8px 133px;
+        font-size: 30px;
+    }
+
+    .mth-content-two .mth-text p {
+        margin: 1rem 8rem;
+        ;
+    }
+
+    .mth-card-form {
+        margin: 2rem 2.5rem;
+        padding: 1rem 2rem;
+    }
+
+    .form-title {
+        margin: 0 3rem;
+    }
+
+    .mth-form input,
+    .mth-form-name input,
+    .mth-form select {
+        width: 600px;
+
+    }
+
+    .mth-bannerOne h1 {
+        margin: 1rem 0 !important;
+        font-size: 50px;
+        padding: 0 4rem;
+    }
+
+    .mth-content-tdatos {
+        padding: 0 1rem;
+    }
+
+    .mth-btn-off {
+        padding: 8px 252px;
+    }
+
+    .mth-card-two {
+        flex-wrap: nowrap;
+    }
+
+    .mth-dnone {
+        display: none;
+    }
+
+    .mth-slider {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        margin-left: 25px;
+    }
+
+    .mth-card {
+        margin: 0 20px;
+        width: 263px;
+    }
+
+    .mth-card p {
+        padding: 8px 22px;
+        line-height: 25px;
+        height: 6em;
+    }
+
+    .mth-card .pb-5 {
+        padding: 0 !important;
+    }
+
+    .mth-card-img {
+        width: 263px;
+    }
+
+    .mth-content-three {
+        padding-bottom: 0 !important;
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0 !important;
+
+    }
+
+    .slide-mb {
+        display: block;
+    }
+
+    .mth-top {
+        margin-top: 3rem;
+    }
+
+    .mth-d-active {
+        display: grid !important;
+    }
+
+    .cards-event-one .col-6 {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .comunidad-img {
+        width: 96% !important;
+    }
+
+    .content-left div:nth-of-type(1) {
+        text-align: center;
+        width: 65%;
+    }
+
+    .tarjetabp {
+        padding-top: 7rem;
+    }
+
+    .content-right .card {
+        margin-top: -55px;
+    }
+
+    .content-right .card h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .mth-text h1 {
+        font-size: 42px;
+        padding: 0 8rem;
+    }
+
+    .mth-content-three h1 {
+        font-size: 42px;
+        padding: 0 8rem;
+    }
+
+    .mth-card-two h5 {
+        font-size: 19px;
+    }
+
+    .mth-card-two p {
+        font-size: 16px;
+    }
+
+    .mth-card-two {
+        width: 388px;
+    }
+
+    .card-two-img {
+        text-align: end;
+    }
+
+    .autorice-content {
+        width: 81%;
+    }
+
+    .legal-form {
+        width: 85%;
+    }
+
+    .mth-form .ps-2 {
+        padding: 0 !important;
+    }
+}
+
+.content-thankyoupage div {
+    width: 700px;
+}
+
+.mth-li-guion {
+    list-style: none;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    /* Esto asegura que el video mantenga su proporción */
+    overflow: hidden;
+    /* Esto oculta cualquier contenido fuera del contenedor */
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.video-container,
+video {
+    margin: 0;
+    padding: 0;
+}
+
+.play-pause-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 53px;
+    border: none;
+    border-radius: 50%;
+    display: none;
+    z-index: 1;
+}
+
+.video-container:hover .play-pause-btn {
+    display: block;
+
+}
+
+video {
+    display: block;
+    width: 100%;
+    height: auto;
+}

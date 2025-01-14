@@ -24,7 +24,14 @@
         </button>
       </div>
       <div class="col-8 col-sm-8 col-md-8 col-lg-8 text-center">
-        <img src="assets/Bannerone.png" alt="banner" class="w-75">
+        <div class="video-container">
+          <div class="ratio ratio-16x9">
+            <video id="myVideo" src="assets/video/video_home.mp4" autoplay mute loop>
+              Tu navegador no soporta la etiqueta de video.
+            </video>
+                    </div>
+          <button id="playPauseBtn" class="play-pause-btn" onclick="togglePlayPause()"><img src="assets/video/play.png" alt="play"></button> <!-- Play/Pause button -->
+        </div>
       </div>
     </div>
   </div>
@@ -199,7 +206,8 @@
             <a onclick="openFinance()" id="btnFinance" class="btn-active">Financiamiento</a>
           </div>
           <div id="openFinanceEvent" class="openFinanceDiv">
-            <h4 class="mt-3">Aprende sobre los beneficios</h4>
+            <h4 class="mt-3">Aprende sobre los beneficios<br> 
+              en la oferta +50</h4>
             <a href="/detalleProductoTarjetaPosible.html">
               <div class="d-flex justify-content-start align-items-center content-logo mt-3">
                 <img src="./assets/MoneyTCreditoP.png" alt="Tarjeta de Crédito Posible">
@@ -236,7 +244,8 @@
             </div>
           </div>
           <div id="openAhorroEvent" class="openAhorroDiv mth-d-none">
-            <h4 class="mt-3">Aprende sobre los beneficios</h4>
+            <h4 class="mt-3">Aprende sobre los beneficios<br> 
+              en la oferta +50</h4>
             <a href="/detalleProductoCuentaPension.html">
               <div class="d-flex justify-content-start align-items-center content-logo mt-3">
                 <img src="./assets/Icon.png" alt="cuenta pension">
