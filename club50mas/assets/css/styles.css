@@ -593,10 +593,11 @@ p span {
     line-height: 12px;
 }
 
-#inputNombre:focus,
-#inputCorreo:focus,
+#nameInt:focus,
+#ciudadInt:focus,
+#emailInt:focus,
 #documentoInt:focus,
-#inputCelular:focus {
+#phoneInt:focus {
     background-color: #C5ECBF;
     border: 0.75px solid #008C00;
 }
@@ -607,7 +608,7 @@ p span {
     cursor: not-allowed !important;
     color: #ffffff;
     border-radius: 6px;
-    padding: 12px 41%;
+    padding: 12px 10rem;
     font-weight: 600;
 }
 
@@ -719,6 +720,26 @@ img.mth-img-player-mijo {
     display: none;
 }
 
+
+.mth-col-slider-responsive-two {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.content-thankyoupage div {
+    width: 700px;
+}
+
+.mth-li-guion {
+    list-style: none;
+}
+.mth-li-guion::before{content: "- "}
 /* Responsive Tablet*/
 
 @media (max-width: 768px) {
@@ -910,7 +931,14 @@ img.mth-img-player-mijo {
         width: 85%;
     }
 
-    .mth-banner-credito-libranza {
+    .mth-banner-credito-libranza, 
+    .mth-banner-cdt, 
+    .mth-banner-cuenta-ahorrar,
+    .mth-banner-cuenta-nomina,
+    .mth-banner-cuenta-pension,
+    .mth-banner-seguros,
+    .mth-banner-tarjeta-credito,
+    .mth-banner-tarjeta-posible {
         height: 270px;
         margin-bottom: 58em;
     }
@@ -956,39 +984,20 @@ img.mth-img-player-mijo {
     
 }
 
-.mth-col-slider-responsive-two {
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.carousel-inner .carousel-item.active,
-	.carousel-inner .carousel-item-next,
-	.carousel-inner .carousel-item-prev {
-		display: flex;
-	}
-
 @media (min-width: 768px) {
     
     .carousel-inner .carousel-item-end.active,
     .carousel-inner .carousel-item-next {
-      transform: translateX(50%);
+      transform: translateX(25%);
     }
     
     .carousel-inner .carousel-item-start.active, 
     .carousel-inner .carousel-item-prev {
-      transform: translateX(-50%);
+      transform: translateX(-20%);
     }
 }
 
 .carousel-inner .carousel-item-end,
 .carousel-inner .carousel-item-start { 
   transform: translateX(0);
-}
-
-.content-thankyoupage div {
-    width: 700px;
-}
-
-.mth-li-guion {
-    list-style: none;
 }
